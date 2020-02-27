@@ -1,11 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 // import fontów
 @import url('https://fonts.googleapis.com/css?family=Clicker+Script|Playball|Stalemate&display=swap&subset=latin-ext');
 
+//reset
+@import "reset";
+// zmienne
+@import "variables";
 // first page
-@import "first_page.scss";
+@import "first_page";
+// main page
+@import "main_page";

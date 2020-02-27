@@ -1,4 +1,4 @@
-.firstPage {
+.first-page {
     height: 100vh;
     width: 100vw;
     padding-top: 10vw;
@@ -7,13 +7,15 @@
     align-items: center;
     background-image: url(/img/first_page/tomato-2780424_1920_2.jpg);
     background-size: cover;
-    font-family: "playball", sans-serif;
-    h1 {
+    font-family: $font-main;
+
+    .app-title {
         margin: 10vw;
         font-size: 21vw;
         text-align: center;
-        color: #fffdfe;
+        color: $color-title;
     }
+
     a {
         margin: 5vh 10vw;
         padding: 3vw;
