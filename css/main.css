@@ -20,7 +20,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/first_page/tomato-2780424_1920_2.jpg);
+  background-image: url(/img/first_page/tomato-2780424_1920_2_Easy-Resize.com.jpg);
   background-size: cover;
   font-family: "playball", sans-serif;
 }
@@ -53,7 +53,7 @@
   height: 12.5vh;
   border: 2px solid black;
   background-size: cover;
-  background-image: url(/img/first_page/tomato-2780424_1920_2.jpg);
+  background-image: url(/img/first_page/tomato-2780424_1920_2_Easy-Resize.com.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +66,7 @@
 }
 
 .main-header h2 {
-  font-size: 15vw;
+  font-size: 16vw;
   color: #fffdfe;
   font-family: "playball", sans-serif;
 }
@@ -92,23 +92,22 @@ div[class$="category"] a {
 }
 
 div[class$="category"] a h3 {
-  font-size: 7.5vw;
-  position: absolute;
+  font-size: 8vw;
   color: black;
   position: absolute;
 }
 
-.snack-category {
-  background-image: url(/img/snack/tasting-cheese-dish-on-a-wooden-plate-picjumbo-com.jpg);
+.snack-category, .snack-recipes_title {
+  background-image: url(/img/snack/tasting-cheese-dish-on-a-wooden-plate-picjumbo-com_Easy-Resize.com.jpg);
   background-position: 0% 30%;
 }
 
-.snack-category h3 {
+.snack-category h3, .snack-recipes_title h3 {
   left: 55%;
 }
 
 .salad-category {
-  background-image: url(/img/vege/louis-hansel-shotsoflouis-phEaeqe555M-unsplash.jpg);
+  background-image: url(/img/vege/louis-hansel-shotsoflouis-phEaeqe555M-unsplash_Easy-Resize.com.jpg);
   background-position: 50% 30%;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
@@ -121,7 +120,7 @@ div[class$="category"] a h3 {
 }
 
 .meat-category {
-  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash.jpg);
+  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com.jpg);
   background-position: 40% 100%;
 }
 
@@ -130,7 +129,7 @@ div[class$="category"] a h3 {
 }
 
 .vege-category {
-  background-image: url(/img/vege/food-2068217_1920.jpg);
+  background-image: url(/img/vege/food-2068217_1920_Easy-Resize.com.jpg);
 }
 
 .vege-category h3 {
@@ -138,7 +137,7 @@ div[class$="category"] a h3 {
 }
 
 .soup-category {
-  background-image: url(/img/soup/cayla1-w6ftFbPCs9I-unsplash.jpg);
+  background-image: url(/img/soup/cayla1-w6ftFbPCs9I-unsplash_Easy-Resize.com.jpg);
   background-position: 0% 4%;
 }
 
@@ -147,7 +146,7 @@ div[class$="category"] a h3 {
 }
 
 .sweet-category {
-  background-image: url(/img/on_sweetly/three-yummy-donuts-with-room-for-text-picjumbo-com.jpg);
+  background-image: url(/img/on_sweetly/three-yummy-donuts-with-room-for-text-picjumbo-com_Easy-Resize.com.jpg);
   background-position: 0% 45%;
 }
 
@@ -156,7 +155,7 @@ div[class$="category"] a h3 {
 }
 
 .smoothie-category {
-  background-image: url(/img/smoothie/fresh-strawberries-bananas-smoothie-picjumbo-com.jpg);
+  background-image: url(/img/smoothie/fresh-strawberries-bananas-smoothie-picjumbo-com_Easy-Resize.com.jpg);
   background-position: 0% 15%;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
@@ -166,6 +165,26 @@ div[class$="category"] a h3 {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   right: 62%;
+}
+
+.snack-recipes_title {
+  width: 100vw;
+  height: 12.5vh;
+  border: 2px solid black;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.snack-recipes_title h3 {
+  font-size: 8vw;
+  color: black;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */

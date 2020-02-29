@@ -1,0 +1,20 @@
+%category {
+  width: 100vw;
+  height: (100vh / 8);
+  border: 2px solid black;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  h3 {
+    font-size: 8vw;
+    color: black;
+    position: absolute;
+  }
+}
+
+.snack-recipes_title {
+  @extend %category;
+  @extend .snack-category;
+}
