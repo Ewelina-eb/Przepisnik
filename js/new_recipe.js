@@ -61,6 +61,13 @@ document.addEventListener("DOMContentLoaded", function () {
             form.style.backgroundSize = "cover";
             break;
 
+        case "smoothie":
+            header.classList.add("smoothie-category");
+            header.querySelector("h3").innerHTML = "Koktajle";
+            form.style.backgroundImage = "url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg)";
+            form.style.backgroundSize = "cover";
+            break;
+
         default:
             break;
     }

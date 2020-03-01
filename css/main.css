@@ -154,14 +154,14 @@ div[class$="category"] a h3 {
   left: 10%;
 }
 
-.smoothie-category {
+.smoothie-category, .smoothie-recipes_title {
   background-image: url(/img/smoothie/fresh-strawberries-bananas-smoothie-picjumbo-com_Easy-Resize.com.jpg);
   background-position: 0% 15%;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 
-.smoothie-category h3 {
+.smoothie-category h3, .smoothie-recipes_title h3 {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   right: 62%;
@@ -219,7 +219,7 @@ div[class$="category"] a h3 {
   margin-top: auto;
 }
 
-.category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title {
+.category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title, .smoothie-recipes_title {
   width: 100vw;
   height: 12.5vh;
   border: 2px solid black;
@@ -233,7 +233,7 @@ div[class$="category"] a h3 {
   position: relative;
 }
 
-.category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3, .meat-recipes_title h3, .vege-recipes_title h3, .soup-recipes_title h3 {
+.category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3, .meat-recipes_title h3, .vege-recipes_title h3, .soup-recipes_title h3, .smoothie-recipes_title h3 {
   font-size: 8vw;
   color: black;
   position: absolute;
@@ -564,6 +564,68 @@ div[class$="category"] a h3 {
 }
 
 .soup-recipes_list li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 7vw;
+  font-family: "playball", sans-serif;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-recipe-btn {
+  width: 100vw;
+  height: 10.5vh;
+  border: 2px solid black;
+  margin-top: auto;
+}
+
+.add-recipe-btn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 7vw;
+}
+
+.smoothie-recipes_list {
+  width: 100vw;
+  min-height: 87.5vh;
+  background-image: url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.smoothie-recipes_list li {
+  width: 100vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.smoothie-recipes_list li a {
   width: 100%;
   height: 100%;
   text-decoration: none;
