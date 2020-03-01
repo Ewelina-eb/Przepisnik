@@ -32,6 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
             form.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
             form.style.backgroundSize = "cover";
             break;
+
+            case "salad":
+                header.classList.add("salad-category");
+                header.querySelector("h3").innerHTML = "Sałatki";
+                form.style.backgroundImage = "url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg)";
+                form.style.backgroundSize = "cover";
+                break;
+
         default:
             break;
     }

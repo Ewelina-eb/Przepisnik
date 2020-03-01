@@ -1,7 +1,7 @@
 // import fontów
 @import url('https://fonts.googleapis.com/css?family=Clicker+Script|Playball|Stalemate&display=swap&subset=latin-ext');
 
-//reset
+// reset
 @import "reset";
 // zmienne
 @import "variables";
@@ -9,9 +9,11 @@
 @import "first_page";
 // main page with category
 @import "main_page";
-// snack recipes
-@import "snack_recipes";
 // add new recipe
 @import "new_recipe";
-// sweet recipes
+// page with snack recipes
+@import "snack_recipes";
+// page with sweet recipes
 @import "sweet_recipes";
+// page with salad recipes
+@import "salad_recipes";

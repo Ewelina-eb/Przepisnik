@@ -106,14 +106,14 @@ div[class$="category"] a h3 {
   left: 55%;
 }
 
-.salad-category {
+.salad-category, .salad-recipes_title {
   background-image: url(/img/vege/louis-hansel-shotsoflouis-phEaeqe555M-unsplash_Easy-Resize.com.jpg);
   background-position: 50% 30%;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 
-.salad-category h3 {
+.salad-category h3, .salad-recipes_title h3 {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   right: 10%;
@@ -167,7 +167,59 @@ div[class$="category"] a h3 {
   right: 62%;
 }
 
-.snack-recipes_title, .category-name, .sweet-recipes_title {
+.new-recipe {
+  min-height: 87.5vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recipe-title,
+.recipe-ingredients,
+.recipe-preparation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1vh 4vw;
+}
+
+.recipe-title label,
+.recipe-ingredients label,
+.recipe-preparation label {
+  font-size: 7vw;
+  font-family: "playball", sans-serif;
+}
+
+.recipe-title input {
+  height: 7vh;
+  font-size: 9vw;
+  font-family: "playball", sans-serif;
+  text-align: center;
+}
+
+.recipe-ingredients textarea,
+.recipe-preparation textarea {
+  font-size: 6vw;
+  font-family: "playball", sans-serif;
+}
+
+.add-recipe-btn {
+  margin-top: auto;
+}
+
+.category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title {
   width: 100vw;
   height: 12.5vh;
   border: 2px solid black;
@@ -181,7 +233,7 @@ div[class$="category"] a h3 {
   position: relative;
 }
 
-.snack-recipes_title h3, .category-name h3, .sweet-recipes_title h3 {
+.category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3 {
   font-size: 8vw;
   color: black;
   position: absolute;
@@ -248,58 +300,6 @@ div[class$="category"] a h3 {
   font-size: 7vw;
 }
 
-.new-recipe {
-  min-height: 87.5vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.recipe-title,
-.recipe-ingredients,
-.recipe-preparation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1vh 4vw;
-}
-
-.recipe-title label,
-.recipe-ingredients label,
-.recipe-preparation label {
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-}
-
-.recipe-title input {
-  height: 7vh;
-  font-size: 9vw;
-  font-family: "playball", sans-serif;
-  text-align: center;
-}
-
-.recipe-ingredients textarea,
-.recipe-preparation textarea {
-  font-size: 6vw;
-  font-family: "playball", sans-serif;
-}
-
-.add-recipe-btn {
-  margin-top: auto;
-}
-
 .sweet-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
@@ -320,6 +320,67 @@ div[class$="category"] a h3 {
 }
 
 .sweet-recipes_list li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 7vw;
+  font-family: "playball", sans-serif;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-recipe-btn {
+  width: 100vw;
+  height: 10.5vh;
+  border: 2px solid black;
+  margin-top: auto;
+}
+
+.add-recipe-btn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 7vw;
+}
+
+.salad-recipes_list {
+  width: 100vw;
+  min-height: 87.5vh;
+  background-image: url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.salad-recipes_list li {
+  width: 100vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.salad-recipes_list li a {
   width: 100%;
   height: 100%;
   text-decoration: none;
