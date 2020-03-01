@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     let category = getUrlParam("category", "category");
     console.log(category);
-    let header = document.querySelector("header");
+    let header = document.querySelector(".category-name");
     let form = document.querySelector(".new-recipe");
 
     switch (category) {
@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
         case "sweet":
             header.classList.add("sweet-category");
             header.querySelector("h3").innerHTML = "Na słodko";
+            form.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
+            form.style.backgroundSize = "cover";
             break;
         default:
             break;
