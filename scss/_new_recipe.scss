@@ -1,0 +1,45 @@
+.category-name {
+  @extend %category;
+}
+
+.new-recipe {
+  min-height: 87.5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-title,
+.recipe-ingredients,
+.recipe-preparation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1vh 4vw;
+
+  label {
+    font-size: 7vw;
+    font-family: $font-main;
+  }
+}
+
+.recipe-title {
+  input {
+    height: 7vh;
+    font-size: 9vw;
+    font-family: $font-main;
+    text-align: center;
+  }
+}
+
+.recipe-ingredients,
+.recipe-preparation {
+  textarea {
+    font-size: 6vw;
+    font-family: $font-main;
+  }
+}
+
+.add-recipe-btn {
+  margin-top: auto;
+}
