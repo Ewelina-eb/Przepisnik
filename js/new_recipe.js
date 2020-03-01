@@ -54,6 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
             form.style.backgroundSize = "cover";
             break;
 
+        case "soup":
+            header.classList.add("soup-category");
+            header.querySelector("h3").innerHTML = "Zupy";
+            form.style.backgroundImage = "url(/img/soup/soup-and-croutons-picjumbo-com_Easy-Resize.com.jpg)";
+            form.style.backgroundSize = "cover";
+            break;
+
         default:
             break;
     }
