@@ -119,12 +119,12 @@ div[class$="category"] a h3 {
   right: 10%;
 }
 
-.meat-category {
+.meat-category, .meat-recipes_title {
   background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com.jpg);
   background-position: 40% 100%;
 }
 
-.meat-category h3 {
+.meat-category h3, .meat-recipes_title h3 {
   left: 47%;
 }
 
@@ -219,7 +219,7 @@ div[class$="category"] a h3 {
   margin-top: auto;
 }
 
-.category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title {
+.category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title {
   width: 100vw;
   height: 12.5vh;
   border: 2px solid black;
@@ -233,7 +233,7 @@ div[class$="category"] a h3 {
   position: relative;
 }
 
-.category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3 {
+.category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3, .meat-recipes_title h3 {
   font-size: 8vw;
   color: black;
   position: absolute;
@@ -381,6 +381,67 @@ div[class$="category"] a h3 {
 }
 
 .salad-recipes_list li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 7vw;
+  font-family: "playball", sans-serif;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-recipe-btn {
+  width: 100vw;
+  height: 10.5vh;
+  border: 2px solid black;
+  margin-top: auto;
+}
+
+.add-recipe-btn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 7vw;
+}
+
+.meat-recipes_list {
+  width: 100vw;
+  min-height: 87.5vh;
+  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.meat-recipes_list li {
+  width: 100vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.meat-recipes_list li a {
   width: 100%;
   height: 100%;
   text-decoration: none;

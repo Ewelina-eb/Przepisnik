@@ -33,12 +33,19 @@ document.addEventListener("DOMContentLoaded", function () {
             form.style.backgroundSize = "cover";
             break;
 
-            case "salad":
-                header.classList.add("salad-category");
-                header.querySelector("h3").innerHTML = "Sałatki";
-                form.style.backgroundImage = "url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg)";
-                form.style.backgroundSize = "cover";
-                break;
+        case "salad":
+            header.classList.add("salad-category");
+            header.querySelector("h3").innerHTML = "Sałatki";
+            form.style.backgroundImage = "url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg)";
+            form.style.backgroundSize = "cover";
+            break;
+
+        case "meat":
+            header.classList.add("meat-category");
+            header.querySelector("h3").innerHTML = "Dania mięsne";
+            form.style.backgroundImage = "url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg)";
+            form.style.backgroundSize = "cover";
+            break;
 
         default:
             break;
