@@ -47,6 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
             form.style.backgroundSize = "cover";
             break;
 
+        case "vege":
+            header.classList.add("vege-category");
+            header.querySelector("h3").innerHTML = "Dania vege";
+            form.style.backgroundImage = "url(/img/vege/nordwood-themes-Tmz8FThN_BE-unsplash_Easy-Resize.com.jpg)";
+            form.style.backgroundSize = "cover";
+            break;
+
         default:
             break;
     }
