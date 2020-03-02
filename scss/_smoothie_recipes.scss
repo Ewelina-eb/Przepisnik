@@ -6,7 +6,7 @@
 .smoothie-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
-  background-image: url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg);
+  background-image: $smoothie-background-img;
   background-size: cover;
   display: flex;
   flex-direction: column;

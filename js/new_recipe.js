@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return urlparameter;
     }
+    
     let category = getUrlParam("category", "category");
-    console.log(category);
     let header = document.querySelector(".category-name");
     let form = document.querySelector(".new-recipe");
 

@@ -47,7 +47,7 @@ div[class$="category"] {
 }
 
 .snack-category {
-    background-image: url(/img/snack/tasting-cheese-dish-on-a-wooden-plate-picjumbo-com_Easy-Resize.com.jpg);
+    background-image: $snack-header-img;
     background-position: 0% 30%;
 
     h3 {
@@ -56,7 +56,7 @@ div[class$="category"] {
 }
 
 .salad-category {
-    background-image: url(/img/vege/louis-hansel-shotsoflouis-phEaeqe555M-unsplash_Easy-Resize.com.jpg);
+    background-image: $salad-header-img;
     background-position: 50% 30%;
     transform: scale(-1, 1);
 
@@ -67,7 +67,7 @@ div[class$="category"] {
 }
 
 .meat-category {
-    background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com.jpg);
+    background-image: $meat-header-img;
     background-position: 40% 100%;
 
     h3 {
@@ -76,7 +76,7 @@ div[class$="category"] {
 }
 
 .vege-category {
-    background-image: url(/img/vege/food-2068217_1920_Easy-Resize.com.jpg);
+    background-image: $vege-header-img;
 
     h3 {
         left: 10%;
@@ -84,7 +84,7 @@ div[class$="category"] {
 }
 
 .soup-category {
-    background-image: url(/img/soup/cayla1-w6ftFbPCs9I-unsplash_Easy-Resize.com.jpg);
+    background-image: $soup-header-img;
     background-position: 0% 4%;
 
     h3 {
@@ -93,7 +93,7 @@ div[class$="category"] {
 }
 
 .sweet-category {
-    background-image: url(/img/on_sweetly/three-yummy-donuts-with-room-for-text-picjumbo-com_Easy-Resize.com.jpg);
+    background-image: $sweet-header-img;
     background-position: 0% 45%;
 
     h3 {
@@ -102,7 +102,7 @@ div[class$="category"] {
 }
 
 .smoothie-category {
-    background-image: url(/img/smoothie/fresh-strawberries-bananas-smoothie-picjumbo-com_Easy-Resize.com.jpg); 
+    background-image: $smoothie-header-img; 
     background-position: 0% 15%;
     transform: scale(-1, 1);
 

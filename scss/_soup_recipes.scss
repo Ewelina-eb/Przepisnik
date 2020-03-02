@@ -6,7 +6,7 @@
   .soup-recipes_list {
     width: 100vw;
     min-height: 87.5vh;
-    background-image: url(/img/soup/soup-and-croutons-picjumbo-com_Easy-Resize.com.jpg);
+    background-image: $soup-background-img;
     display: flex;
     flex-direction: column;
   
