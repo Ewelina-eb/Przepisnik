@@ -211,8 +211,10 @@ div[class$="category"] a h3 {
 
 .recipe-ingredients textarea,
 .recipe-preparation textarea {
-  font-size: 6vw;
-  font-family: "playball", sans-serif;
+  font-size: 4.8vw;
+  font-family: "hind", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
 }
 
 .add-recipe-btn {

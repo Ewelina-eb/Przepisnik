@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    // URL parameters
+
     function getUrlVars() {
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        let vars = {};
+        let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
             vars[key] = value;
         });
         return vars;
@@ -13,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return urlparameter;
     }
-    
-    let category = getUrlParam("category", "category");
-    let header = document.querySelector(".category-name");
-    let form = document.querySelector(".new-recipe");
+
+    const category = getUrlParam("category", "category");
+    const header = document.querySelector(".category-name");
+    const form = document.querySelector(".new-recipe");
 
     switch (category) {
         case "snack":
@@ -71,4 +74,49 @@ document.addEventListener("DOMContentLoaded", function () {
         default:
             break;
     }
+
+    // Local Storage
+
+    const title = document.getElementById("title"); // input
+    const ingredients = document.getElementById("ingredients"); // textarea
+    const preparation = document.getElementById("preparation"); // textarea
+    const saveRecipeBtn = document.getElementById("save-recipe"); // btn "Dodaję!"
+    const renderRecipesBtn = document.getElementById("renderRecipes"); // btn roboczy "Wyświetl przepis"
+    const allRecipiesContainer = document.getElementById("allRecipes"); // roboczy kontener na wyświetlenie przepisów
+
+    const newRecipe = {
+        category: category,
+        title: "",
+        ingredients: "",
+        preparation: ""
+    };
+
+    // funkcja pomocnicza, która odbiera obiekt i dodaje go do localStorage. Dba o zapisanie danych w formacie JSON
+    function saveRecipeToLocalStorage(newObject) {
+        let dataFromLocalStorage = [];
+        if (localStorage.getItem("recipes") != null) {
+            dataFromLocalStorage = JSON.parse(localStorage.getItem("recipes"));
+            dataFromLocalStorage.push(newObject);
+            localStorage.setItem("recipes", JSON.stringify(dataFromLocalStorage));
+        } else {
+            dataFromLocalStorage.push(newObject);
+            localStorage.setItem("recipes", JSON.stringify(dataFromLocalStorage));
+        }
+        alert("Przepis zapisany do localStorage");
+    }
+
+    // zapisanie do obiektu danych z input i textarea oraz zapisanie nowego przepisu w localStorage
+    saveRecipeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        newRecipe.title = title.value;
+        newRecipe.ingredients = ingredients.value;
+        newRecipe.preparation = preparation.value;
+        saveRecipeToLocalStorage(newRecipe);
+        // wyczyszczenie pół input i textarea
+        title.value = "";
+        ingredients.value = "";
+        preparation.value = "";
+    });
+
+
 });

@@ -35,8 +35,10 @@
 .recipe-ingredients,
 .recipe-preparation {
   textarea {
-    font-size: 6vw;
-    font-family: $font-main;
+    font-size: 4.8vw;
+    font-family: $font-text;
+    font-weight: 500;
+    line-height: 1.3;
   }
 }
 

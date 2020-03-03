@@ -7,35 +7,37 @@
     <title>Przepiśnik</title>
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Playball|Stalemate&display=swap&subset=latin-ext"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="/js/new_recipe.js" asynch></script>
+    <script src="/js/new_recipe.js" defer></script>
 </head>
 
 <body>
 
     <header class="category-name">
-        <h3>Lorem</h3>
+        <h3></h3>
     </header>
 
     <form action="" class="new-recipe">
         <div class="recipe-title">
             <label for="">Nazwa przepisu</label>
-            <input type="text">
+            <input id="title" type="text">
         </div>
         <div class="recipe-ingredients">
             <label for="">Składniki</label>
-            <textarea name="" cols="30" rows="6"></textarea>
+            <textarea id="ingredients" name="" cols="30" rows="6"></textarea>
         </div>
         <div class="recipe-preparation">
             <label for="">Sposób przygotowania</label>
-            <textarea name="" cols="30" rows="5"></textarea>
+            <textarea id="preparation" name="" cols="30" rows="5"></textarea>
         </div>
 
         <div class="add-recipe-btn">
-            <a href=""><strong>Dodaję!</strong></a>
+            <a href="" id="save-recipe"><strong>Dodaję!</strong></a>
         </div>
     </form>
-   
+
 </body>
 
 </html>
