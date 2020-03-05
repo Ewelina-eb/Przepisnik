@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Playball|Stalemate&display=swap&subset=latin-ext"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="/js/new_recipe.js" defer></script>
 </head>
 
 <body>
@@ -19,9 +20,6 @@
 
         <section class="smoothie-recipes_list">
             <ul>
-                <li><a href="show_recipe.html">Lorem ipsum dolor sit.</a></li>
-                <li><a href="show_recipe.html">Lorem ipsum dolor sit.</a></li>
-                <li><a href="show_recipe.html">Lorem ipsum dolor sit.</a></li>
             </ul>
 
             <div class="add-recipe-btn">
@@ -30,6 +28,27 @@
         </section>
     </section>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const smoothieRecipesList = document.querySelector(".smoothie-recipes_list ul");
+            // wyświetlenie przepisów z localStorage 
+            function renderRecipesList() {
+                let allRecipes = JSON.parse(localStorage.getItem("recipes"));
+                allRecipes.forEach(function (singleRecipe) {
+                    let newTitle = document.createElement("li");
+                    let newTitleLink = document.createElement("a");
+                    if (singleRecipe.category === "smoothie") {
+                        newTitleLink.innerHTML = singleRecipe.title;
+                        newTitle.appendChild(newTitleLink);
+                        smoothieRecipesList.appendChild(newTitle);
+                    }
+                });
+            }
+            window.addEventListener("load", renderRecipesList, false);
+
+        });
+    </script>
 </body>
 
 </html>

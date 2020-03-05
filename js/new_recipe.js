@@ -81,8 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const ingredients = document.getElementById("ingredients"); // textarea
     const preparation = document.getElementById("preparation"); // textarea
     const saveRecipeBtn = document.getElementById("save-recipe"); // btn "Dodaję!"
-    const renderRecipesBtn = document.getElementById("renderRecipes"); // btn roboczy "Wyświetl przepis"
-    const allRecipiesContainer = document.getElementById("allRecipes"); // roboczy kontener na wyświetlenie przepisów
 
     const newRecipe = {
         category: category,
@@ -106,17 +104,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // zapisanie do obiektu danych z input i textarea oraz zapisanie nowego przepisu w localStorage
-    saveRecipeBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        newRecipe.title = title.value;
-        newRecipe.ingredients = ingredients.value;
-        newRecipe.preparation = preparation.value;
-        saveRecipeToLocalStorage(newRecipe);
-        // wyczyszczenie pół input i textarea
-        title.value = "";
-        ingredients.value = "";
-        preparation.value = "";
-    });
-
+    if (saveRecipeBtn) {
+        saveRecipeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            newRecipe.title = title.value;
+            newRecipe.ingredients = ingredients.value;
+            newRecipe.preparation = preparation.value;
+            saveRecipeToLocalStorage(newRecipe);
+            // wyczyszczenie pół input i textarea
+            title.value = "";
+            ingredients.value = "";
+            preparation.value = "";
+        });
+    }
 
 });
