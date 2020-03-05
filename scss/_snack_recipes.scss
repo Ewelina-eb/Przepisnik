@@ -1,16 +1,16 @@
 %category {
   width: 100vw;
   height: (100vh / 8);
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.756);
   background-size: cover;
   display: flex;
   align-items: center;
   position: relative;
 
   h3 {
-    font-size: 8vw;
+    font-size: 8.5vw;
     color: rgba(0, 0, 0, 0.897);
-    text-shadow: rgba(247, 225, 171, 0.808) -1.5px 1.7px 2px;
+    text-shadow: $color-main 1.2px 1.3px 2px;
     position: absolute;
   }
 }
@@ -18,14 +18,15 @@
 %recipes-list {
   width: 100vw;
   min-height: 87.5vh;
-  background-image: $snack-background-img;
   display: flex;
   flex-direction: column;
+  background-size: cover;
 
   li {
     width: 100vw;
     height: 9vh;
     border: 1px solid rgba(0, 0, 0, 0.356);
+    background-color: rgba(250, 249, 245, 0.600);
 
     a {
       width: 100%;
@@ -48,6 +49,7 @@
 
 .snack-recipes_list {
   @extend %recipes-list;
+  background-image: $snack-background-img;
 }
 
 .add-recipe-btn {
@@ -62,8 +64,8 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: rgba(240, 235, 188, 0.863);
-    text-shadow: rgba(0, 0, 0, 0.705) 1.5px 1.5px 2px;
+    color: $color-main;
+    text-shadow: rgba(0, 0, 0, 0.705) 1.2px 1.3px 2px;
     font-size: 7vw;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.356);

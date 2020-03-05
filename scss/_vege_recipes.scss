@@ -5,4 +5,5 @@
   
   .vege-recipes_list {
     @extend %recipes-list;
+    background-image: $vege-background-img;
   }

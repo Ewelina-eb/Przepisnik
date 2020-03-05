@@ -173,7 +173,7 @@ div[class$="category"] a {
 div[class$="category"] a h3 {
   font-size: 8vw;
   color: rgba(0, 0, 0, 0.897);
-  text-shadow: rgba(240, 235, 188, 0.863) -1.5px 1.7px 2px;
+  text-shadow: rgba(250, 249, 245, 0.976) 1px 1.3px 2px;
   position: absolute;
 }
 
@@ -259,9 +259,9 @@ div[class$="category"] a h3 {
           flex-direction: column;
 }
 
-.recipe-title,
-.recipe-ingredients,
-.recipe-preparation {
+.new-recipe-title,
+.new-recipe-ingredients,
+.new-recipe-preparation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,22 +275,24 @@ div[class$="category"] a h3 {
   margin: 1vh 4vw;
 }
 
-.recipe-title label,
-.recipe-ingredients label,
-.recipe-preparation label {
+.new-recipe-title label,
+.new-recipe-ingredients label,
+.new-recipe-preparation label {
+  margin-top: 1vh;
   font-size: 7vw;
   font-family: "playball", sans-serif;
+  background-color: rgba(250, 249, 245, 0.5);
 }
 
-.recipe-title input {
+.new-recipe-title input {
   height: 7vh;
   font-size: 9vw;
   font-family: "playball", sans-serif;
   text-align: center;
 }
 
-.recipe-ingredients textarea,
-.recipe-preparation textarea {
+.new-recipe-ingredients textarea,
+.new-recipe-preparation textarea {
   font-size: 4.8vw;
   font-family: "hind", sans-serif;
   font-weight: 500;
@@ -306,8 +308,8 @@ div[class$="category"] a h3 {
 .save-recipe-btn button {
   width: 100%;
   height: 100%;
-  color: rgba(240, 235, 188, 0.863);
-  text-shadow: rgba(0, 0, 0, 0.705) -2px 2px 2px;
+  color: rgba(250, 249, 245, 0.976);
+  text-shadow: rgba(0, 0, 0, 0.705) 1.2px 1.3px 2px;
   font-size: 7vw;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.356);
@@ -319,7 +321,6 @@ div[class$="category"] a h3 {
 .show-recipes-btn {
   width: 100vw;
   height: 6vh;
-  border: 1px solid black;
 }
 
 .show-recipes-btn a {
@@ -338,12 +339,15 @@ div[class$="category"] a h3 {
   color: black;
   font-size: 6.5vw;
   font-weight: bold;
+  background-color: rgba(250, 249, 245, 0.5);
+  -webkit-box-shadow: rgba(250, 249, 245, 0.5) 1px -1px 2px;
+          box-shadow: rgba(250, 249, 245, 0.5) 1px -1px 2px;
 }
 
 .category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title, .smoothie-recipes_title {
   width: 100vw;
   height: 12.5vh;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.756);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,16 +359,15 @@ div[class$="category"] a h3 {
 }
 
 .category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3, .meat-recipes_title h3, .vege-recipes_title h3, .soup-recipes_title h3, .smoothie-recipes_title h3 {
-  font-size: 8vw;
+  font-size: 8.5vw;
   color: rgba(0, 0, 0, 0.897);
-  text-shadow: rgba(247, 225, 171, 0.808) -1.5px 1.7px 2px;
+  text-shadow: rgba(250, 249, 245, 0.976) 1.2px 1.3px 2px;
   position: absolute;
 }
 
 .snack-recipes_list, .sweet-recipes_list, .salad-recipes_list, .meat-recipes_list, .vege-recipes_list, .soup-recipes_list, .smoothie-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
-  background-image: url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,12 +375,14 @@ div[class$="category"] a h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: cover;
 }
 
 .snack-recipes_list li, .sweet-recipes_list li, .salad-recipes_list li, .meat-recipes_list li, .vege-recipes_list li, .soup-recipes_list li, .smoothie-recipes_list li {
   width: 100vw;
   height: 9vh;
   border: 1px solid rgba(0, 0, 0, 0.356);
+  background-color: rgba(250, 249, 245, 0.6);
 }
 
 .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
@@ -396,6 +401,10 @@ div[class$="category"] a h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.snack-recipes_list {
+  background-image: url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg);
 }
 
 .add-recipe-btn {
@@ -417,13 +426,130 @@ div[class$="category"] a h3 {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: rgba(240, 235, 188, 0.863);
-  text-shadow: rgba(0, 0, 0, 0.705) 1.5px 1.5px 2px;
+  color: rgba(250, 249, 245, 0.976);
+  text-shadow: rgba(0, 0, 0, 0.705) 1.2px 1.3px 2px;
   font-size: 7vw;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.356);
   -webkit-box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
           box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
+}
+
+.sweet-recipes_list {
+  background-image: url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg);
+}
+
+.salad-recipes_list {
+  background-image: url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg);
+}
+
+.meat-recipes_list {
+  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg);
+}
+
+.vege-recipes_list {
+  background-image: url(/img/vege/nordwood-themes-Tmz8FThN_BE-unsplash_Easy-Resize.com.jpg);
+}
+
+.soup-recipes_list {
+  background-image: url(/img/soup/soup-and-croutons-picjumbo-com_Easy-Resize.com.jpg);
+}
+
+.smoothie-recipes_list {
+  background-image: url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg);
+}
+
+.recipe {
+  min-height: 87.5vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recipe-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3.2vh 4vw;
+}
+
+.recipe-title h4 {
+  font-size: 9vw;
+  font-family: "playball", sans-serif;
+  text-align: center;
+}
+
+.recipe-ingredients,
+.recipe-preparation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1vh 4vw;
+}
+
+.recipe-ingredients h5,
+.recipe-preparation h5 {
+  font-size: 7vw;
+  font-family: "playball", sans-serif;
+  padding-bottom: 1vh;
+  background-color: rgba(250, 249, 245, 0.5);
+}
+
+.recipe-ingredients p,
+.recipe-preparation p {
+  font-size: 5.2vw;
+  font-family: "hind", sans-serif;
+  color: black;
+  font-weight: 500;
+  line-height: 1.3;
+  background-color: rgba(250, 249, 245, 0.7);
+}
+
+.recipe-btn {
+  width: 100vw;
+  height: 9vh;
+  margin-top: auto;
+}
+
+.recipe-btn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: rgba(250, 249, 245, 0.976);
+  text-shadow: rgba(0, 0, 0, 0.705) 1.2px 1.3px 2px;
+  font-size: 6.5vw;
+  font-weight: bold;
+  background-color: rgba(97, 93, 93, 0.651);
+  -webkit-box-shadow: rgba(65, 60, 60, 0.705) 1px -1px 4px;
+          box-shadow: rgba(65, 60, 60, 0.705) 1px -1px 4px;
 }
 
 /*# sourceMappingURL=main.css.map */

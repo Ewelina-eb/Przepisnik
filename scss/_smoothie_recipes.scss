@@ -5,4 +5,5 @@
 
 .smoothie-recipes_list {
   @extend %recipes-list;
+  background-image: $smoothie-background-img;
 }

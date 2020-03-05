@@ -5,4 +5,5 @@
   
   .sweet-recipes_list {
     @extend %recipes-list;
+    background-image: $sweet-background-img;
   }
