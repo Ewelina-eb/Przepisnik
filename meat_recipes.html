@@ -15,7 +15,7 @@
 
     <section class="meat-recipes">
         <header class="meat-recipes_title">
-            <h3>Przekąski</h3>
+            <h3>Dania mięsne</h3>
         </header>
 
         <section class="meat-recipes_list">
@@ -39,6 +39,7 @@
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "meat") {
+                        newTitleLink.href = "/show_recipe.html?category=meat";
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         meatRecipesList.appendChild(newTitle);

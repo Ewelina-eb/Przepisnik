@@ -38,6 +38,7 @@
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "snack") {
+                        newTitleLink.href = "/show_recipe.html?category=snack";
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         snackRecipesList.appendChild(newTitle);

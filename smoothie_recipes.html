@@ -39,6 +39,7 @@
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "smoothie") {
+                        newTitleLink.href = "/show_recipe.html?category=smoothie";
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         smoothieRecipesList.appendChild(newTitle);

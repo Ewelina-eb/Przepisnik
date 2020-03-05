@@ -38,6 +38,7 @@
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "vege") {
+                        newTitleLink.href = "/show_recipe.html?category=vege";
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         vegeRecipesList.appendChild(newTitle);

@@ -39,6 +39,7 @@
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "salad") {
+                        newTitleLink.href = "/show_recipe.html?category=salad";
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         saladRecipesList.appendChild(newTitle);

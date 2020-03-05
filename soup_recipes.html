@@ -39,6 +39,7 @@
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "soup") {
+                        newTitleLink.href = "/show_recipe.html?category=soup";
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         soupRecipesList.appendChild(newTitle);
