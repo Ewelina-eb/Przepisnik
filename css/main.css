@@ -361,7 +361,7 @@ div[class$="category"] a h3 {
   position: absolute;
 }
 
-.snack-recipes_list {
+.snack-recipes_list, .sweet-recipes_list, .salad-recipes_list, .meat-recipes_list, .vege-recipes_list, .soup-recipes_list, .smoothie-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
   background-image: url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg);
@@ -374,13 +374,13 @@ div[class$="category"] a h3 {
           flex-direction: column;
 }
 
-.snack-recipes_list li {
+.snack-recipes_list li, .sweet-recipes_list li, .salad-recipes_list li, .meat-recipes_list li, .vege-recipes_list li, .soup-recipes_list li, .smoothie-recipes_list li {
   width: 100vw;
   height: 9vh;
   border: 1px solid rgba(0, 0, 0, 0.356);
 }
 
-.snack-recipes_list li a {
+.snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -424,229 +424,6 @@ div[class$="category"] a h3 {
   background-color: rgba(0, 0, 0, 0.356);
   -webkit-box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
           box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
-}
-
-.sweet-recipes_list {
-  width: 100vw;
-  min-height: 87.5vh;
-  background-image: url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sweet-recipes_list li {
-  width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
-}
-
-.sweet-recipes_list li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.salad-recipes_list {
-  width: 100vw;
-  min-height: 87.5vh;
-  background-image: url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.salad-recipes_list li {
-  width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
-}
-
-.salad-recipes_list li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.meat-recipes_list {
-  width: 100vw;
-  min-height: 87.5vh;
-  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.meat-recipes_list li {
-  width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
-}
-
-.meat-recipes_list li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.vege-recipes_list {
-  width: 100vw;
-  min-height: 87.5vh;
-  background-image: url(/img/vege/nordwood-themes-Tmz8FThN_BE-unsplash_Easy-Resize.com.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.vege-recipes_list li {
-  width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
-}
-
-.vege-recipes_list li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.soup-recipes_list {
-  width: 100vw;
-  min-height: 87.5vh;
-  background-image: url(/img/soup/soup-and-croutons-picjumbo-com_Easy-Resize.com.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.soup-recipes_list li {
-  width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
-}
-
-.soup-recipes_list li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.smoothie-recipes_list {
-  width: 100vw;
-  min-height: 87.5vh;
-  background-image: url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.smoothie-recipes_list li {
-  width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
-}
-
-.smoothie-recipes_list li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 7vw;
-  font-family: "playball", sans-serif;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

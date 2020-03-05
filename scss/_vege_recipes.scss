@@ -4,27 +4,5 @@
   }
   
   .vege-recipes_list {
-    width: 100vw;
-    min-height: 87.5vh;
-    background-image: $vege-background-img;
-    display: flex;
-    flex-direction: column;
-  
-    li {
-      width: 100vw;
-      height: 10vh;
-      border: 1px solid black;
-  
-      a {
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        font-size: 7vw;
-        font-family: $font-main;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
+    @extend %recipes-list;
   }

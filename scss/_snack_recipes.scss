@@ -15,12 +15,7 @@
   }
 }
 
-.snack-recipes_title {
-  @extend %category;
-  @extend .snack-category;
-}
-
-.snack-recipes_list {
+%recipes-list {
   width: 100vw;
   min-height: 87.5vh;
   background-image: $snack-background-img;
@@ -44,6 +39,15 @@
       align-items: center;
     }
   }
+}
+
+.snack-recipes_title {
+  @extend %category;
+  @extend .snack-category;
+}
+
+.snack-recipes_list {
+  @extend %recipes-list;
 }
 
 .add-recipe-btn {
