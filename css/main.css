@@ -172,7 +172,8 @@ div[class$="category"] a {
 
 div[class$="category"] a h3 {
   font-size: 8vw;
-  color: black;
+  color: rgba(0, 0, 0, 0.897);
+  text-shadow: rgba(240, 235, 188, 0.863) -1.5px 1.7px 2px;
   position: absolute;
 }
 
@@ -296,11 +297,32 @@ div[class$="category"] a h3 {
   line-height: 1.3;
 }
 
-.add-recipe-btn {
+.save-recipe-btn {
+  width: 100vw;
+  height: 9vh;
   margin-top: auto;
 }
 
-.add-recipe-btn button {
+.save-recipe-btn button {
+  width: 100%;
+  height: 100%;
+  color: rgba(240, 235, 188, 0.863);
+  text-shadow: rgba(0, 0, 0, 0.705) -2px 2px 2px;
+  font-size: 7vw;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.356);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
+  border: none;
+}
+
+.show-recipes-btn {
+  width: 100vw;
+  height: 6vh;
+  border: 1px solid black;
+}
+
+.show-recipes-btn a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -312,8 +334,10 @@ div[class$="category"] a h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   color: black;
-  font-size: 7vw;
+  font-size: 6.5vw;
+  font-weight: bold;
 }
 
 .category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title, .smoothie-recipes_title {
@@ -332,7 +356,8 @@ div[class$="category"] a h3 {
 
 .category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3, .meat-recipes_title h3, .vege-recipes_title h3, .soup-recipes_title h3, .smoothie-recipes_title h3 {
   font-size: 8vw;
-  color: black;
+  color: rgba(0, 0, 0, 0.897);
+  text-shadow: rgba(247, 225, 171, 0.808) -1.5px 1.7px 2px;
   position: absolute;
 }
 
@@ -351,8 +376,8 @@ div[class$="category"] a h3 {
 
 .snack-recipes_list li {
   width: 100vw;
-  height: 10vh;
-  border: 1px solid black;
+  height: 9vh;
+  border: 1px solid rgba(0, 0, 0, 0.356);
 }
 
 .snack-recipes_list li a {
@@ -375,8 +400,7 @@ div[class$="category"] a h3 {
 
 .add-recipe-btn {
   width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
+  height: 9vh;
   margin-top: auto;
 }
 
@@ -393,8 +417,13 @@ div[class$="category"] a h3 {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: black;
+  color: rgba(240, 235, 188, 0.863);
+  text-shadow: rgba(0, 0, 0, 0.705) 1.5px 1.5px 2px;
   font-size: 7vw;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.356);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
 }
 
 .sweet-recipes_list {
@@ -434,30 +463,6 @@ div[class$="category"] a h3 {
           align-items: center;
 }
 
-.add-recipe-btn {
-  width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
-  margin-top: auto;
-}
-
-.add-recipe-btn a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 7vw;
-}
-
 .salad-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
@@ -493,30 +498,6 @@ div[class$="category"] a h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.add-recipe-btn {
-  width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
-  margin-top: auto;
-}
-
-.add-recipe-btn a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 7vw;
 }
 
 .meat-recipes_list {
@@ -556,30 +537,6 @@ div[class$="category"] a h3 {
           align-items: center;
 }
 
-.add-recipe-btn {
-  width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
-  margin-top: auto;
-}
-
-.add-recipe-btn a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 7vw;
-}
-
 .vege-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
@@ -615,30 +572,6 @@ div[class$="category"] a h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.add-recipe-btn {
-  width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
-  margin-top: auto;
-}
-
-.add-recipe-btn a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 7vw;
 }
 
 .soup-recipes_list {
@@ -678,30 +611,6 @@ div[class$="category"] a h3 {
           align-items: center;
 }
 
-.add-recipe-btn {
-  width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
-  margin-top: auto;
-}
-
-.add-recipe-btn a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 7vw;
-}
-
 .smoothie-recipes_list {
   width: 100vw;
   min-height: 87.5vh;
@@ -738,30 +647,6 @@ div[class$="category"] a h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.add-recipe-btn {
-  width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
-  margin-top: auto;
-}
-
-.add-recipe-btn a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 7vw;
 }
 
 /*# sourceMappingURL=main.css.map */

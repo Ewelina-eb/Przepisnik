@@ -9,7 +9,8 @@
 
   h3 {
     font-size: 8vw;
-    color: black;
+    color: rgba(0, 0, 0, 0.897);
+    text-shadow: rgba(247, 225, 171, 0.808) -1.5px 1.7px 2px;
     position: absolute;
   }
 }
@@ -28,8 +29,8 @@
 
   li {
     width: 100vw;
-    height: 10vh;
-    border: 1px solid black;
+    height: 9vh;
+    border: 1px solid rgba(0, 0, 0, 0.356);
 
     a {
       width: 100%;
@@ -47,8 +48,7 @@
 
 .add-recipe-btn {
   width: 100vw;
-  height: 10.5vh;
-  border: 2px solid black;
+  height: 9vh;
   margin-top: auto;
 
   a {
@@ -58,7 +58,11 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: rgba(240, 235, 188, 0.863);
+    text-shadow: rgba(0, 0, 0, 0.705) 1.5px 1.5px 2px;
     font-size: 7vw;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
   }
 }

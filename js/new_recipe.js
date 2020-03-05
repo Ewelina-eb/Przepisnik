@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = document.getElementById("title"); // input
     const ingredients = document.getElementById("ingredients"); // textarea
     const preparation = document.getElementById("preparation"); // textarea
-    const saveRecipeBtn = document.getElementById("save-recipe"); // btn "Dodaję!"
+    const saveRecipeBtn = document.getElementById("save-recipe-btn"); // btn "Dodaję!"
 
     const newRecipe = {
         category: category,
