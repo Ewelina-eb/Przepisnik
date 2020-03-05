@@ -9,7 +9,7 @@
 .first-page {
   height: 100vh;
   width: 100vw;
-  padding-top: 10vw;
+  padding-top: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +22,7 @@
           align-items: center;
   background-image: url(/img/first_page/tomato-2780424_1920_2_Easy-Resize.com.jpg);
   background-size: cover;
+  background-position: center;
   font-family: "playball", sans-serif;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .first-page a {
-  margin: 5vh 10vw;
+  margin: 0 10vw;
   padding: 3vw;
   background-color: #f31c42;
   font-size: 8vw;
@@ -41,6 +42,84 @@
   text-align: center;
   color: #fff;
   border-radius: 25%;
+}
+
+@media (min-width: 400px) {
+  .first-page {
+    padding-top: 4vh;
+    background-size: 100% 100%;
+  }
+  .first-page .app-title {
+    font-size: 20vw;
+  }
+  .first-page a {
+    font-size: 6vw;
+    margin: 0vh 7vw;
+  }
+}
+
+@media (min-width: 515px) {
+  .first-page {
+    padding-top: 0;
+  }
+  .first-page .app-title {
+    font-size: 19vw;
+  }
+  .first-page a {
+    font-size: 5vw;
+    margin: 0vh 6vw;
+    padding: 2.5vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .first-page .app-title {
+    font-size: 18vw;
+    margin: 7vh 10vw;
+  }
+  .first-page a {
+    font-size: 4.5vw;
+    margin: 0vh 6vw;
+    padding: 2.3vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .first-page {
+    background-size: cover;
+  }
+  .first-page a {
+    font-size: 4vw;
+    margin: 0vh 6vw;
+    padding: 1.7vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .first-page .app-title {
+    font-size: 16vw;
+    margin: 6vh 10vw;
+  }
+  .first-page a {
+    font-size: 3.3vw;
+    padding: 1.3vw;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .first-page {
+    background-size: contain;
+  }
+  .first-page .app-title {
+    font-size: 12.5vw;
+    margin: 1vh 10vw 3vh;
+  }
+  .first-page a {
+    font-size: 2.2vw;
+    margin: 0vh 6vw;
+    padding: 1vw;
+  }
 }
 
 .main-page {
