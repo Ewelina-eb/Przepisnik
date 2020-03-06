@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Playball|Stalemate&display=swap&subset=latin-ext"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="/js/new_recipe.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </head>
 
 <body>
@@ -31,15 +31,16 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
-            const soupRecipesList = document.querySelector(".soup-recipes_list ul");
             // wyświetlenie przepisów z localStorage 
             function renderRecipesList() {
                 let allRecipes = JSON.parse(localStorage.getItem("recipes"));
-                allRecipes.forEach(function (singleRecipe) {
+                const soupRecipesList = document.querySelector(".soup-recipes_list ul");
+                
+                allRecipes.forEach(function (singleRecipe, i) {
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
                     if (singleRecipe.category === "soup") {
-                        newTitleLink.href = "/show_recipe.html?category=soup";
+                        newTitleLink.href = `/show_recipe.html?category=soup&id=${i}`;
                         newTitleLink.innerHTML = singleRecipe.title;
                         newTitle.appendChild(newTitleLink);
                         soupRecipesList.appendChild(newTitle);

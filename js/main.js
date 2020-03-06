@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const category = getUrlParam("category", "category");
+    const id = getUrlParam("id", "id");
     const header = document.querySelector(".category-name");
     const form = document.querySelector(".new-recipe");
     const recipe = document.querySelector(".recipe");
@@ -110,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         default:
             break;
     }
-    
+
     // Local Storage
 
     const title = document.getElementById("title"); // input
@@ -152,6 +153,26 @@ document.addEventListener("DOMContentLoaded", function () {
             ingredients.value = "";
             preparation.value = "";
         });
+    }
+
+    //wyświetlenie przepisu z localStorage
+    if (id) {
+        function renderRecipe() {
+            let allRecipes = JSON.parse(localStorage.getItem("recipes"));
+
+            const recipeTitle = document.querySelector(".recipe-title h4");
+            const recipeIngredients = document.querySelector(".recipe-ingredients p");
+            const recipePreparation = document.querySelector(".recipe-preparation p");
+
+            allRecipes.forEach(function (singleRecipe, i) {
+                if (category == category & id == i) {
+                    recipeTitle.innerHTML = singleRecipe.title;
+                    recipeIngredients.innerHTML = singleRecipe.ingredients;
+                    recipePreparation.innerHTML = singleRecipe.preparation;
+                }
+            });
+        }
+        window.addEventListener("load", renderRecipe, false);
     }
 
 });
