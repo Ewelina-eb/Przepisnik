@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
             dataFromLocalStorage.push(newObject);
             localStorage.setItem("recipes", JSON.stringify(dataFromLocalStorage));
         }
-        alert("Przepis zapisany do localStorage");
+        alert("Przepis zapisany! Możesz dodać od razu kolejny. ;-)");
     }
 
     // zapisanie do obiektu danych z input i textarea oraz zapisanie nowego przepisu w localStorage

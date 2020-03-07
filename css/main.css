@@ -318,12 +318,12 @@ div[class$="category"] a h3 {
   border: none;
 }
 
-.show-recipes-btn {
+.back-to-recipes-btn {
   width: 100vw;
   height: 6vh;
 }
 
-.show-recipes-btn a {
+.back-to-recipes-btn a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
