@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/img/first_page/tomato-2780424_1920_2_Easy-Resize.com.jpg);
+  background-image: $first-page-background;
   background-size: cover;
   background-position: center;
   font-family: $font-main;

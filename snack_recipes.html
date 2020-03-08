@@ -13,19 +13,63 @@
 
 <body>
 
-    <section class="snack-recipes">
-        <header class="snack-recipes_title">
-            <h3>Przekąski</h3>
+    <div class="container">
+        <header class="header">
+            <h2>Przepiśnik</h2>
         </header>
-        <section class="snack-recipes_list">
-            <ul>
-            </ul>
 
-            <div class="add-recipe-btn">
-                <a href="/new_recipe.html?category=snack">Dodaj nowy przepis</a>
+        <nav class="snack-menu">
+            <div class="snack-category">
+                <a href="snack_recipes.html">
+                    <h3>Przekąski</h3>
+                </a>
+            </div>
+            <div class="salad-category">
+                <a href="salad_recipes.html">
+                    <h3>Sałatki</h3>
+                </a>
+            </div>
+            <div class="meat-category">
+                <a href="meat_recipes.html">
+                    <h3>Dania mięsne</h3>
+                </a>
+            </div>
+            <div class="vege-category">
+                <a href="vege_recipes.html">
+                    <h3>Dania vege</h3>
+                </a>
+            </div>
+            <div class="soup-category">
+                <a href="soup_recipes.html">
+                    <h3>Zupy</h3>
+                </a>
+            </div>
+            <div class="sweet-category">
+                <a href="sweet_recipes.html">
+                    <h3>Na słodko</h3>
+                </a>
+            </div>
+            <div class="smoothie-category">
+                <a href="smoothie_recipes.html">
+                    <h3>Koktajle</h3>
+                </a>
+            </div>
+        </nav>
+
+        <section class="snack-recipes">
+            <header class="snack-recipes_title">
+                <h3>Przekąski</h3>
+            </header>
+            <div class="snack-recipes_list">
+                <ul>
+                </ul>
+
+                <div class="add-recipe-btn">
+                    <a href="/new_recipe.html?category=snack">Dodaj nowy przepis</a>
+                </div>
             </div>
         </section>
-    </section>
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -34,7 +78,7 @@
             function renderRecipesList() {
                 let allRecipes = JSON.parse(localStorage.getItem("recipes"));
                 const snackRecipesList = document.querySelector(".snack-recipes_list ul");
-                
+
                 allRecipes.forEach(function (singleRecipe, i) {
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");

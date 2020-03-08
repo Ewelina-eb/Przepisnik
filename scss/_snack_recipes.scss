@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   position: relative;
-
   h3 {
     font-size: 8.5vw;
     color: rgba(0, 0, 0, 0.897);
@@ -21,13 +20,12 @@
   display: flex;
   flex-direction: column;
   background-size: cover;
-
   li {
-    width: 100vw;
-    height: 9vh;
-    border: 1px solid rgba(0, 0, 0, 0.356);
-    background-color: rgba(250, 249, 245, 0.600);
-
+    width: 100%;
+    height: 8.5vh;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    background-color: rgba(250, 249, 245, 0.6);
+    list-style: none;
     a {
       width: 100%;
       height: 100%;
@@ -50,13 +48,15 @@
 .snack-recipes_list {
   @extend %recipes-list;
   background-image: $snack-background-img;
+  li {
+    background-color: rgba(250, 249, 245, 0.4);
+  }
 }
 
 .add-recipe-btn {
   width: 100vw;
   height: 9vh;
   margin-top: auto;
-
   a {
     width: 100%;
     height: 100%;
@@ -70,5 +70,309 @@
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.356);
     box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
+  }
+}
+
+// RWD
+.header {
+  display: none;
+}
+
+.snack-menu {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  %recipes-list {
+    li {
+      height: 7.5vh;
+      border: 1px solid rgba(0, 0, 0, 0.156);
+      a {
+        font-size: 6.5vw;
+      }
+    }
+  }
+}
+
+.add-recipe-btn {
+  height: 7.7vh;
+  a {
+    font-size: 6.7vw;
+  }
+}
+
+@media (min-width: 400px) {
+  %recipes-list {
+    li {
+      a {
+        font-size: 6.1vw;
+      }
+    }
+  }
+}
+
+.add-recipe-btn {
+  a {
+    font-size: 6.3vw;
+  }
+}
+
+@media (min-width: 480px) {
+  %recipes-list {
+    li {
+      a {
+        font-size: 5vw;
+      }
+    }
+  }
+
+  .add-recipe-btn {
+    a {
+      font-size: 5.2vw;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  %category {
+    h3 {
+      font-size: 7.7vw;
+    }
+  }
+  %recipes-list {
+    li {
+      a {
+        font-size: 4.3vw;
+        box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
+      }
+    }
+  }
+
+  .add-recipe-btn {
+    a {
+      font-size: 4.5vw;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 12.5vh 1fr;
+    grid-gap: 0px;
+    grid-template-areas:
+      "header header"
+      "menu main";
+  }
+
+  %category {
+    display: none;
+  }
+
+  .header {
+    border: 1px solid rgba(71, 70, 70, 0.805);
+    background-size: cover;
+    background-image: $first-page-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    h2 {
+      font-size: 8vw;
+      color: $color-title;
+      font-family: $font-main;
+    }
+  }
+
+  %btn-category {
+    border: 1px solid rgba(71, 70, 70, 0.805);
+    min-height: (100vh / 8);
+    width: 30vw;
+    padding: auto;
+    border-top: 1px;
+    flex-grow: 1;
+    a {
+      h3 {
+        font-size: 2.7vw;
+        bottom: 24%;
+      }
+    }
+    &:hover:not(.snack-category) {
+      opacity: 0.9;
+    }
+  }
+
+  .snack-menu {
+    display: flex;
+    flex-direction: column;
+    grid-area: menu;
+    .snack-category {
+      h3 {
+        left: 54%;
+      }
+    }
+    .salad-category {
+      opacity: 0.6;
+      h3 {
+        right: 7%;
+      }
+    }
+    .meat-category {
+      opacity: 0.6;
+      h3 {
+        left: 43.5%;
+        bottom: 23%;
+      }
+    }
+    .vege-category {
+      opacity: 0.6;
+      h3 {
+        left: 5%;
+      }
+    }
+    .soup-category {
+      opacity: 0.6;
+      h3 {
+        left: 69%;
+      }
+    }
+    .sweet-category {
+      opacity: 0.6;
+      h3 {
+        left: 5%;
+      }
+    }
+    .smoothie-category {
+      opacity: 0.6;
+      h3 {
+        right: 63%;
+      }
+    }
+  }
+
+  %recipes-list {
+    max-width: 70vw;
+    grid-area: main;
+    li {
+      height: 7vh;
+      &:hover {
+        background-color: rgba(250, 249, 245, 1);
+      }
+      a {
+        font-size: 2.8vw;
+        &:hover {
+          font-size: 3.1vw;
+        }
+      }
+    }
+  }
+
+  .add-recipe-btn {
+    max-width: 70vw;
+    height: 7vh;
+    a {
+      font-size: 3vw;
+      &:hover {
+        font-size: 3.3vw;
+        background-color: rgba(0, 0, 0, 0.356);
+        box-shadow: rgba(0, 0, 0, 0.705) 1px -4px 4px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .header {
+    h2 {
+      font-size: 6.5vw;
+    }
+  }
+
+  %btn-category {
+    a {
+      h3 {
+        font-size: 2.3vw;
+      }
+    }
+  }
+  .snack-menu {
+    .meat-category {
+      h3 {
+        left: 46%;
+      }
+    }
+  }
+
+  .snack-recipes_list {
+    background-position: 0% 22%;
+    align-items: center;
+    li {
+      width: 62vw;
+      height: 6.9vh;
+      padding: 3px;
+      border-radius: 10px;
+      a {
+        font-size: 2.1vw;
+        box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
+        border-radius: 10px;
+        &:hover {
+          font-size: 2.3vw;
+        }
+      }
+    }
+  }
+
+  .add-recipe-btn {
+    width: 62vw;
+    height: 7vh;
+    align-items: center;
+    a {
+      font-size: 2.5vw;
+      border-radius: 10px;
+      &:hover {
+        font-size: 2.7vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .header {
+    h2 {
+      font-size: 5.7vw;
+    }
+  }
+
+  %btn-category {
+    // width: 26.9vw;
+    a {
+      h3 {
+        font-size: 2.1vw;
+      }
+    }
+  }
+
+  .snack-recipes_list {
+    li {
+      a {
+        font-size: 1.8vw;
+        &:hover {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+
+  .add-recipe-btn {
+    a {
+      font-size: 2.2vw;
+      &:hover {
+        font-size: 2.4vw;
+      }
+    }
   }
 }

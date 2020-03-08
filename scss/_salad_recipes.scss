@@ -1,9 +1,9 @@
 .salad-recipes_title {
-    @extend %category;
-    @extend .salad-category;
-  }
-  
-  .salad-recipes_list {
-    @extend %recipes-list;
-    background-image: $salad-background-img;
-  }
+  @extend %category;
+  @extend .salad-category;
+}
+
+.salad-recipes_list {
+  @extend %recipes-list;
+  background-image: $salad-background-img;
+}

@@ -158,7 +158,7 @@ div[class$="category"] {
 }
 
 div[class$="category"] a {
-  width: 100vw;
+  width: 100%;
   height: 12.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,10 +379,11 @@ div[class$="category"] a h3 {
 }
 
 .snack-recipes_list li, .sweet-recipes_list li, .salad-recipes_list li, .meat-recipes_list li, .vege-recipes_list li, .soup-recipes_list li, .smoothie-recipes_list li {
-  width: 100vw;
-  height: 9vh;
-  border: 1px solid rgba(0, 0, 0, 0.356);
+  width: 100%;
+  height: 8.5vh;
+  border: 1px solid rgba(0, 0, 0, 0.256);
   background-color: rgba(250, 249, 245, 0.6);
+  list-style: none;
 }
 
 .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
@@ -405,6 +406,10 @@ div[class$="category"] a h3 {
 
 .snack-recipes_list {
   background-image: url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg);
+}
+
+.snack-recipes_list li {
+  background-color: rgba(250, 249, 245, 0.4);
 }
 
 .add-recipe-btn {
@@ -433,6 +438,265 @@ div[class$="category"] a h3 {
   background-color: rgba(0, 0, 0, 0.356);
   -webkit-box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
           box-shadow: rgba(0, 0, 0, 0.705) 1px -1px 4px;
+}
+
+.header {
+  display: none;
+}
+
+.snack-menu {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  .snack-recipes_list li, .sweet-recipes_list li, .salad-recipes_list li, .meat-recipes_list li, .vege-recipes_list li, .soup-recipes_list li, .smoothie-recipes_list li {
+    height: 7.5vh;
+    border: 1px solid rgba(0, 0, 0, 0.156);
+  }
+  .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
+    font-size: 6.5vw;
+  }
+}
+
+.add-recipe-btn {
+  height: 7.7vh;
+}
+
+.add-recipe-btn a {
+  font-size: 6.7vw;
+}
+
+@media (min-width: 400px) {
+  .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
+    font-size: 6.1vw;
+  }
+}
+
+.add-recipe-btn a {
+  font-size: 6.3vw;
+}
+
+@media (min-width: 480px) {
+  .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
+    font-size: 5vw;
+  }
+  .add-recipe-btn a {
+    font-size: 5.2vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .category-name h3, .snack-recipes_title h3, .sweet-recipes_title h3, .salad-recipes_title h3, .meat-recipes_title h3, .vege-recipes_title h3, .soup-recipes_title h3, .smoothie-recipes_title h3 {
+    font-size: 7.7vw;
+  }
+  .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
+    font-size: 4.3vw;
+    -webkit-box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
+            box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
+  }
+  .add-recipe-btn a {
+    font-size: 4.5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 12.5vh 1fr;
+    grid-gap: 0px;
+    grid-template-areas: "header header" "menu main";
+  }
+  .category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title, .smoothie-recipes_title {
+    display: none;
+  }
+  .header {
+    border: 1px solid rgba(71, 70, 70, 0.805);
+    background-size: cover;
+    background-image: url(/img/first_page/tomato-2780424_1920_2_Easy-Resize.com.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-area: header;
+  }
+  .header h2 {
+    font-size: 8vw;
+    color: #fffdfe;
+    font-family: "playball", sans-serif;
+  }
+  div[class$="category"] {
+    border: 1px solid rgba(71, 70, 70, 0.805);
+    min-height: 12.5vh;
+    width: 30vw;
+    padding: auto;
+    border-top: 1px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  div[class$="category"] a h3 {
+    font-size: 2.7vw;
+    bottom: 24%;
+  }
+  div:hover:not(.snack-category):not(.snack-recipes_title)[class$="category"] {
+    opacity: 0.9;
+  }
+  .snack-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-area: menu;
+  }
+  .snack-menu .snack-category h3, .snack-menu .snack-recipes_title h3 {
+    left: 54%;
+  }
+  .snack-menu .salad-category, .snack-menu .salad-recipes_title {
+    opacity: 0.6;
+  }
+  .snack-menu .salad-category h3, .snack-menu .salad-recipes_title h3 {
+    right: 7%;
+  }
+  .snack-menu .meat-category, .snack-menu .meat-recipes_title {
+    opacity: 0.6;
+  }
+  .snack-menu .meat-category h3, .snack-menu .meat-recipes_title h3 {
+    left: 43.5%;
+    bottom: 23%;
+  }
+  .snack-menu .vege-category, .snack-menu .vege-recipes_title {
+    opacity: 0.6;
+  }
+  .snack-menu .vege-category h3, .snack-menu .vege-recipes_title h3 {
+    left: 5%;
+  }
+  .snack-menu .soup-category, .snack-menu .soup-recipes_title {
+    opacity: 0.6;
+  }
+  .snack-menu .soup-category h3, .snack-menu .soup-recipes_title h3 {
+    left: 69%;
+  }
+  .snack-menu .sweet-category, .snack-menu .sweet-recipes_title {
+    opacity: 0.6;
+  }
+  .snack-menu .sweet-category h3, .snack-menu .sweet-recipes_title h3 {
+    left: 5%;
+  }
+  .snack-menu .smoothie-category, .snack-menu .smoothie-recipes_title {
+    opacity: 0.6;
+  }
+  .snack-menu .smoothie-category h3, .snack-menu .smoothie-recipes_title h3 {
+    right: 63%;
+  }
+  .snack-recipes_list, .sweet-recipes_list, .salad-recipes_list, .meat-recipes_list, .vege-recipes_list, .soup-recipes_list, .smoothie-recipes_list {
+    max-width: 70vw;
+    grid-area: main;
+  }
+  .snack-recipes_list li, .sweet-recipes_list li, .salad-recipes_list li, .meat-recipes_list li, .vege-recipes_list li, .soup-recipes_list li, .smoothie-recipes_list li {
+    height: 7vh;
+  }
+  .snack-recipes_list li:hover, .sweet-recipes_list li:hover, .salad-recipes_list li:hover, .meat-recipes_list li:hover, .vege-recipes_list li:hover, .soup-recipes_list li:hover, .smoothie-recipes_list li:hover {
+    background-color: #faf9f5;
+  }
+  .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
+    font-size: 2.8vw;
+  }
+  .snack-recipes_list li a:hover, .sweet-recipes_list li a:hover, .salad-recipes_list li a:hover, .meat-recipes_list li a:hover, .vege-recipes_list li a:hover, .soup-recipes_list li a:hover, .smoothie-recipes_list li a:hover {
+    font-size: 3.1vw;
+  }
+  .add-recipe-btn {
+    max-width: 70vw;
+    height: 7vh;
+  }
+  .add-recipe-btn a {
+    font-size: 3vw;
+  }
+  .add-recipe-btn a:hover {
+    font-size: 3.3vw;
+    background-color: rgba(0, 0, 0, 0.356);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.705) 1px -4px 4px;
+            box-shadow: rgba(0, 0, 0, 0.705) 1px -4px 4px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header h2 {
+    font-size: 6.5vw;
+  }
+  div[class$="category"] a h3 {
+    font-size: 2.3vw;
+  }
+  .snack-menu .meat-category h3, .snack-menu .meat-recipes_title h3 {
+    left: 46%;
+  }
+  .snack-recipes_list {
+    background-position: 0% 22%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .snack-recipes_list li {
+    width: 62vw;
+    height: 6.9vh;
+    padding: 3px;
+    border-radius: 10px;
+  }
+  .snack-recipes_list li a {
+    font-size: 2.1vw;
+    -webkit-box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
+            box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
+    border-radius: 10px;
+  }
+  .snack-recipes_list li a:hover {
+    font-size: 2.3vw;
+  }
+  .add-recipe-btn {
+    width: 62vw;
+    height: 7vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .add-recipe-btn a {
+    font-size: 2.5vw;
+    border-radius: 10px;
+  }
+  .add-recipe-btn a:hover {
+    font-size: 2.7vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header h2 {
+    font-size: 5.7vw;
+  }
+  div[class$="category"] a h3 {
+    font-size: 2.1vw;
+  }
+  .snack-recipes_list li a {
+    font-size: 1.8vw;
+  }
+  .snack-recipes_list li a:hover {
+    font-size: 2vw;
+  }
+  .add-recipe-btn a {
+    font-size: 2.2vw;
+  }
+  .add-recipe-btn a:hover {
+    font-size: 2.4vw;
+  }
 }
 
 .sweet-recipes_list {
