@@ -1,12 +1,12 @@
 .main-page {
+  width: 100%;
   height: 100vh;
-  width: 100vw;
 }
 
 .main-header {
-  width: 100vw;
+  width: 100%;
   height: (100vh / 8);
-  border: 2px solid black;
+  border: 1px solid black;
   background-size: cover;
   background-image: $first-page-background;
   display: flex;
@@ -21,9 +21,9 @@
 }
 
 %btn-category {
-  width: 100vw;
+  width: 100%;
   height: (100vh / 8);
-  border: 2px solid black;
+  border: 1px solid black;
   background-size: cover;
 
   a {
@@ -113,75 +113,42 @@ div[class$="category"] {
   }
 }
 
-// @media (min-width: 480px) {
-//   .main-header {
-//     min-height: (100vh / 8);
-//     h2 {
-//       font-size: 14vw;
-//     }
-//   }
-//   %btn-category {
-//     height: (100vh / 8);
-//     a {
-//       h3 {
-//         font-size: 6.5vw;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 400px) {
+  %btn-category {
+    a {
+      h3 {
+        font-size: 7vw;
+      }
+    }
+  }
+}
 
-// @media (min-width: 768px) {
-//   .main-header {
-//     height: (100vh / 8);
-//     width: 100vw;
-//     h2 {
-//       font-size: 8vw;
-//     }
-//   }
-//   %btn-category {
-//     height: (100vh / 8);
-//     width: 30vw;
-//     a {
-//       h3 {
-//         font-size: 2.7vw;
-//         bottom: 24%;
-//       }
-//     }
-//   }
-//   .snack-category {
-//     h3 {
-//       left: 16%;
-//     }
-//   }
-//   .salad-category {
-//     h3 {
-//       right: 73%;
-//     }
-//   }
-//   .meat-category {
-//     h3 {
-//       left: 13.5%;
-//       bottom: 23%;
-//     }
-//   }
-//   .vege-category {
-//     h3 {
-//       left: 2%;
-//     }
-//   }
-//   .soup-category {
-//     h3 {
-//       left: 20%;
-//     }
-//   }
-//   .sweet-category {
-//     h3 {
-//       left: 2%;
-//     }
-//   }
-//   .smoothie-category {
-//     h3 {
-//       right: 89%;
-//     }
-//   }
-// }
+@media (min-width: 480px) {
+  .main-header {
+    h2 {
+      font-size: 13.7vw;
+    }
+  }
+  %btn-category {
+    a {
+      h3 {
+        font-size: 6vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .main-header {
+    h2 {
+      font-size: 12.2vw;
+    }
+  }
+  %btn-category {
+    a {
+      h3 {
+        font-size: 5.2vw;
+      }
+    }
+  }
+}
