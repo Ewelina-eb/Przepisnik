@@ -29,6 +29,11 @@
   }
 }
 
+// RWD
+.to-snack_recipes-btn {
+  display: none;
+}
+
 @media (min-width: 400px) {
   .first-page {
     padding-top: 4vh;
@@ -79,6 +84,12 @@
         margin: 0vh 6vw;
         padding: 1.7vw;
       }
+    }
+    .to-main_page-btn {
+      display: none;
+    }
+    .to-snack_recipes-btn {
+      display: block;
     }
   }
 
