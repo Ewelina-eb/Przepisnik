@@ -140,7 +140,7 @@
 .main-header {
   width: 100%;
   height: 12.5vh;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.656);
   background-size: cover;
   background-image: url(/img/first_page/tomato-2780424_1920_2_Easy-Resize.com.jpg);
   display: -webkit-box;
@@ -163,7 +163,7 @@
 div[class$="category"] {
   width: 100%;
   height: 12.5vh;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.656);
   background-size: cover;
 }
 
@@ -381,7 +381,7 @@ div[class$="category"] a h3 {
 .category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title, .smoothie-recipes_title {
   width: 100%;
   height: 12.5vh;
-  border: 2px solid rgba(0, 0, 0, 0.756);
+  border: 1px solid rgba(0, 0, 0, 0.656);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;

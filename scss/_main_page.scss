@@ -6,7 +6,7 @@
 .main-header {
   width: 100%;
   height: (100vh / 8);
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.656);
   background-size: cover;
   background-image: $first-page-background;
   display: flex;
@@ -23,7 +23,7 @@
 %btn-category {
   width: 100%;
   height: (100vh / 8);
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.656);
   background-size: cover;
 
   a {
