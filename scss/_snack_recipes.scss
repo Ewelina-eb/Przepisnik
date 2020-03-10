@@ -121,14 +121,14 @@
   %recipes-list {
     li {
       a {
-        font-size: 5vw;
+        font-size: 4.7vw;
       }
     }
   }
 
   .add-recipe-btn {
     a {
-      font-size: 5.2vw;
+      font-size: 5vw;
     }
   }
 }
@@ -311,7 +311,7 @@
   }
 
   .snack-recipes_list {
-    background-position: 0% 22%;
+    background-position: 0% 18%;
   }
 
   %recipes-list {
@@ -347,7 +347,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .header {
     h2 {
       font-size: 5.7vw;

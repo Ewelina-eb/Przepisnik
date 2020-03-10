@@ -19,28 +19,71 @@
         <h3></h3>
     </header>
 
-    <form action="" class="new-recipe">
-        <div class="new-recipe-title">
-            <label for="">Nazwa przepisu</label>
-            <input id="title" type="text">
-        </div>
-        <div class="new-recipe-ingredients">
-            <label for="">Składniki</label>
-            <textarea id="ingredients" name="" cols="30" rows="6"></textarea>
-        </div>
-        <div class="new-recipe-preparation">
-            <label for="">Sposób przygotowania</label>
-            <textarea id="preparation" name="" cols="30" rows="5"></textarea>
-        </div>
+    <div class="container">
+        <header class="header">
+            <h2>Przepiśnik</h2>
+        </header>
 
-        <div class="save-recipe-btn">
-            <button id="save-recipe-btn">Dodaję!</button>
-        </div>
-        <div class="back-to-recipes-btn">
-            <a href="javascript:history.back()">Wyświetl listę przepisów</a>
-        </div>
-    </form>
+        <nav class="menu">
+            <div class="snack-category">
+                <a href="snack_recipes.html">
+                    <h3>Przekąski</h3>
+                </a>
+            </div>
+            <div class="salad-category">
+                <a href="salad_recipes.html">
+                    <h3>Sałatki</h3>
+                </a>
+            </div>
+            <div class="meat-category">
+                <a href="meat_recipes.html">
+                    <h3>Dania mięsne</h3>
+                </a>
+            </div>
+            <div class="vege-category">
+                <a href="vege_recipes.html">
+                    <h3>Dania vege</h3>
+                </a>
+            </div>
+            <div class="soup-category">
+                <a href="soup_recipes.html">
+                    <h3>Zupy</h3>
+                </a>
+            </div>
+            <div class="sweet-category">
+                <a href="sweet_recipes.html">
+                    <h3>Na słodko</h3>
+                </a>
+            </div>
+            <div class="smoothie-category">
+                <a href="smoothie_recipes.html">
+                    <h3>Koktajle</h3>
+                </a>
+            </div>
+        </nav>
 
+        <form action="" class="new-recipe">
+            <div class="new-recipe-title">
+                <label for="">Nazwa przepisu</label>
+                <input id="title" type="text">
+            </div>
+            <div class="new-recipe-ingredients">
+                <label for="">Składniki</label>
+                <textarea id="ingredients" name="" cols="30" rows="6"></textarea>
+            </div>
+            <div class="new-recipe-preparation">
+                <label for="">Sposób przygotowania</label>
+                <textarea id="preparation" name="" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="save-recipe-btn">
+                <button id="save-recipe-btn">Dodaję!</button>
+            </div>
+            <div class="back-to-recipes-btn">
+                <a href="javascript:history.back()">Wyświetl listę przepisów</a>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

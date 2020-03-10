@@ -282,8 +282,8 @@ div[class$="category"] a h3 {
 }
 
 .new-recipe {
+  width: 100%;
   min-height: 87.5vh;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,6 +312,7 @@ div[class$="category"] a h3 {
 .new-recipe-title label,
 .new-recipe-ingredients label,
 .new-recipe-preparation label {
+  padding: 0 3px;
   margin-top: 1vh;
   font-size: 7vw;
   font-family: "playball", sans-serif;
@@ -320,21 +321,59 @@ div[class$="category"] a h3 {
 
 .new-recipe-title input {
   height: 7vh;
+  padding: 0 3px;
   font-size: 9vw;
   font-family: "playball", sans-serif;
   text-align: center;
+  outline-style: none;
+}
+
+.new-recipe-title input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.256);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.605) -1px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.605) -1px 1px 4px;
 }
 
 .new-recipe-ingredients textarea,
 .new-recipe-preparation textarea {
+  padding: 1px 3px;
   font-size: 4.8vw;
   font-family: "hind", sans-serif;
   font-weight: 500;
   line-height: 1.3;
+  outline-style: none;
+}
+
+.new-recipe-ingredients textarea::-webkit-scrollbar-track,
+.new-recipe-preparation textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.156);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.156);
+  background-color: #F5F5F5;
+}
+
+.new-recipe-ingredients textarea::-webkit-scrollbar,
+.new-recipe-preparation textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+  outline-style: none;
+}
+
+.new-recipe-ingredients textarea::-webkit-scrollbar-thumb,
+.new-recipe-preparation textarea::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.156);
+}
+
+.new-recipe-ingredients textarea:focus,
+.new-recipe-preparation textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.256);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.605) -1px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.605) -1px 1px 4px;
 }
 
 .save-recipe-btn {
-  width: 100vw;
+  width: 100%;
   height: 9vh;
   margin-top: auto;
 }
@@ -353,7 +392,7 @@ div[class$="category"] a h3 {
 }
 
 .back-to-recipes-btn {
-  width: 100vw;
+  width: 100%;
   height: 6vh;
 }
 
@@ -376,6 +415,239 @@ div[class$="category"] a h3 {
   background-color: rgba(250, 249, 245, 0.5);
   -webkit-box-shadow: rgba(250, 249, 245, 0.5) 1px -1px 2px;
           box-shadow: rgba(250, 249, 245, 0.5) 1px -1px 2px;
+}
+
+@media (min-width: 360px) {
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    font-size: 6.2vw;
+  }
+  .new-recipe-title input {
+    font-size: 8vw;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    font-size: 4.3vw;
+  }
+  .save-recipe-btn {
+    height: 7.7vh;
+  }
+  .save-recipe-btn button {
+    font-size: 6.7vw;
+  }
+  .back-to-recipes-btn {
+    height: 5.3vh;
+  }
+  .back-to-recipes-btn a {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 430px) {
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    font-size: 5.3vw;
+  }
+  .new-recipe-title input {
+    font-size: 6.5vw;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    font-size: 3.5vw;
+  }
+  .save-recipe-btn button {
+    font-size: 6.3vw;
+  }
+  .back-to-recipes-btn a {
+    font-size: 5.4vw;
+  }
+}
+
+@media (min-width: 480px) {
+  .new-recipe-title,
+  .new-recipe-ingredients,
+  .new-recipe-preparation {
+    margin: 1vh 7vw;
+  }
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    font-size: 4.5vw;
+  }
+  .new-recipe-title input {
+    font-size: 5.5vw;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    font-size: 3vw;
+  }
+  .save-recipe-btn button {
+    font-size: 5vw;
+  }
+  .back-to-recipes-btn a {
+    font-size: 4.5vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .new-recipe-title,
+  .new-recipe-ingredients,
+  .new-recipe-preparation {
+    margin: 1vh 7vw;
+  }
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    font-size: 3.6vw;
+  }
+  .new-recipe-title input {
+    font-size: 4.4vw;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    font-size: 2.5vw;
+  }
+  .save-recipe-btn button {
+    font-size: 4.5vw;
+  }
+  .back-to-recipes-btn a {
+    font-size: 3.7vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .new-recipe {
+    grid-area: main;
+  }
+  .new-recipe-title,
+  .new-recipe-ingredients,
+  .new-recipe-preparation {
+    margin: 1vh 7vw;
+  }
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    font-size: 2.5vw;
+  }
+  .new-recipe-title input {
+    font-size: 3.5vw;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    font-size: 1.7vw;
+  }
+  .save-recipe-btn {
+    max-width: 70vw;
+    height: 7vh;
+  }
+  .save-recipe-btn button {
+    font-size: 3.2vw;
+  }
+  .save-recipe-btn button:hover {
+    font-size: 3.4vw;
+  }
+  .back-to-recipes-btn a {
+    font-size: 2.7vw;
+  }
+  .back-to-recipes-btn a:hover {
+    font-size: 2.9vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .new-recipe {
+    max-width: 75vw;
+    background-position: 0% 18%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .new-recipe-title,
+  .new-recipe-ingredients,
+  .new-recipe-preparation {
+    width: 66vw;
+    margin: 2vh auto;
+  }
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    width: 66vw;
+    font-size: 2vw;
+    border-radius: 10px;
+  }
+  .new-recipe-title input {
+    width: 66vw;
+    font-size: 2.7vw;
+    border-radius: 10px;
+    outline-style: none;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    width: 66vw;
+    font-size: 1.4vw;
+    border-radius: 10px;
+    outline-style: none;
+  }
+  .new-recipe-ingredients textarea::-webkit-scrollbar-track,
+  .new-recipe-preparation textarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  .new-recipe-ingredients textarea::-webkit-scrollbar,
+  .new-recipe-preparation textarea::-webkit-scrollbar {
+    border-radius: 10px;
+    outline-style: none;
+  }
+  .new-recipe-ingredients textarea::-webkit-scrollbar-thumb,
+  .new-recipe-preparation textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+  .save-recipe-btn {
+    width: 66vw;
+    height: 7vh;
+  }
+  .save-recipe-btn button {
+    font-size: 2.7vw;
+    border-radius: 10px;
+  }
+  .back-to-recipes-btn {
+    width: 66vw;
+  }
+  .back-to-recipes-btn a {
+    font-size: 2.3vw;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .new-recipe-title label,
+  .new-recipe-ingredients label,
+  .new-recipe-preparation label {
+    font-size: 1.7vw;
+  }
+  .new-recipe-title input {
+    font-size: 2.3vw;
+  }
+  .new-recipe-ingredients textarea,
+  .new-recipe-preparation textarea {
+    font-size: 1.2vw;
+  }
+  .save-recipe-btn button {
+    font-size: 2.2vw;
+  }
+  .save-recipe-btn button:hover {
+    font-size: 2.4vw;
+  }
+  .back-to-recipes-btn {
+    width: 66vw;
+  }
+  .back-to-recipes-btn a {
+    font-size: 1.9vw;
+  }
+  .back-to-recipes-btn a:hover {
+    font-size: 2.1vw;
+  }
 }
 
 .category-name, .snack-recipes_title, .sweet-recipes_title, .salad-recipes_title, .meat-recipes_title, .vege-recipes_title, .soup-recipes_title, .smoothie-recipes_title {
@@ -512,10 +784,10 @@ div[class$="category"] a h3 {
 
 @media (min-width: 480px) {
   .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
-    font-size: 5vw;
+    font-size: 4.7vw;
   }
   .add-recipe-btn a {
-    font-size: 5.2vw;
+    font-size: 5vw;
   }
 }
 
@@ -680,7 +952,7 @@ div[class$="category"] a h3 {
     left: 46%;
   }
   .snack-recipes_list {
-    background-position: 0% 22%;
+    background-position: 0% 18%;
   }
   .snack-recipes_list, .sweet-recipes_list, .salad-recipes_list, .meat-recipes_list, .vege-recipes_list, .soup-recipes_list, .smoothie-recipes_list {
     max-width: 75vw;
@@ -719,7 +991,7 @@ div[class$="category"] a h3 {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .header h2 {
     font-size: 5.7vw;
   }
@@ -750,6 +1022,7 @@ div[class$="category"] a h3 {
 
 .meat-recipes_list {
   background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg);
+  background-position: 0% 70%;
 }
 
 .vege-recipes_list {
@@ -762,6 +1035,7 @@ div[class$="category"] a h3 {
 
 .smoothie-recipes_list {
   background-image: url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg);
+  background-position: 0% 80%;
 }
 
 .recipe {

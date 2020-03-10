@@ -6,4 +6,5 @@
   .meat-recipes_list {
     @extend %recipes-list;
     background-image: $meat-background-img;
+    background-position: 0% 70%;
   }
