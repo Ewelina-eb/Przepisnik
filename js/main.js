@@ -104,9 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (form) {
                 form.style.backgroundImage = "url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg)";
                 form.style.backgroundSize = "cover";
+                form.style.backgroundPosition = "0% 80%";
             } else {
                 recipe.style.backgroundImage = "url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg)";
                 recipe.style.backgroundSize = "cover";
+                recipe.style.backgroundPosition = "0% 80%";
             }
             break;
 

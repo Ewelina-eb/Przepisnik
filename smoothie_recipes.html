@@ -13,29 +13,72 @@
 
 <body>
 
-    <section class="smoothie-recipes">
-        <header class="smoothie-recipes_title">
-            <h3>Koktajle</h3>
+    <div class="container">
+        <header class="header">
+            <h2>Przepiśnik</h2>
         </header>
 
-        <section class="smoothie-recipes_list">
-            <ul>
-            </ul>
+        <nav class="menu">
+            <div class="snack-category">
+                <a href="snack_recipes.html">
+                    <h3>Przekąski</h3>
+                </a>
+            </div>
+            <div class="salad-category">
+                <a href="salad_recipes.html">
+                    <h3>Sałatki</h3>
+                </a>
+            </div>
+            <div class="meat-category">
+                <a href="meat_recipes.html">
+                    <h3>Dania mięsne</h3>
+                </a>
+            </div>
+            <div class="vege-category">
+                <a href="vege_recipes.html">
+                    <h3>Dania vege</h3>
+                </a>
+            </div>
+            <div class="soup-category">
+                <a href="soup_recipes.html">
+                    <h3>Zupy</h3>
+                </a>
+            </div>
+            <div class="sweet-category">
+                <a href="sweet_recipes.html">
+                    <h3>Na słodko</h3>
+                </a>
+            </div>
+            <div class="smoothie-category">
+                <a href="smoothie_recipes.html">
+                    <h3>Koktajle</h3>
+                </a>
+            </div>
+        </nav>
 
-            <div class="add-recipe-btn">
-                <a href="/new_recipe.html?category=smoothie">Dodaj nowy przepis</a>
+        <section class="smoothie-recipes">
+            <header class="smoothie-recipes_title">
+                <h3>Koktajle</h3>
+            </header>
+
+            <div class="smoothie-recipes_list">
+                <ul>
+                </ul>
+
+                <div class="add-recipe-btn">
+                    <a href="/new_recipe.html?category=smoothie">Dodaj nowy przepis</a>
+                </div>
             </div>
         </section>
-    </section>
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-
             // wyświetlenie przepisów z localStorage 
             function renderRecipesList() {
                 let allRecipes = JSON.parse(localStorage.getItem("recipes"));
                 const smoothieRecipesList = document.querySelector(".smoothie-recipes_list ul");
-                
+
                 allRecipes.forEach(function (singleRecipe, i) {
                     let newTitle = document.createElement("li");
                     let newTitleLink = document.createElement("a");
@@ -46,9 +89,11 @@
                         smoothieRecipesList.appendChild(newTitle);
                     }
                 });
+                // zmiana opacity po kliknięciu smoothie-category
+                const smoothieInMenu = document.querySelector(".smoothie-category");
+                smoothieInMenu.style.opacity = "1";
             }
             window.addEventListener("load", renderRecipesList, false);
-
         });
     </script>
 </body>
