@@ -64,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.add("meat-category");
             header.querySelector("h3").innerHTML = "Dania mięsne";
             if (form) {
-                form.style.backgroundImage = "url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg)";
+                form.style.backgroundImage = "url(/img/meat_dish/cuisine-cutlery-delicious-dining-299348_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
             } else {
-                recipe.style.backgroundImage = "url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com_2.jpg)";
+                recipe.style.backgroundImage = "url(/img/meat_dish/cuisine-cutlery-delicious-dining-299348_Easy-Resize.com.jpg)";
                 recipe.style.backgroundSize = "cover";
             }
             break;

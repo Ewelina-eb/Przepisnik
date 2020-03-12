@@ -89,6 +89,9 @@
                         snackRecipesList.appendChild(newTitle);
                     }
                 });
+                // zmiana opacity po kliknięciu snack-category
+                const snackInMenu = document.querySelector(".snack-category");
+                snackInMenu.style.opacity = "1";
             }
             window.addEventListener("load", renderRecipesList, false);
 
