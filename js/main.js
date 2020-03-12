@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.add("vege-category");
             header.querySelector("h3").innerHTML = "Dania vege";
             if (form) {
-                form.style.backgroundImage = "url(/img/vege/nordwood-themes-Tmz8FThN_BE-unsplash_Easy-Resize.com.jpg)";
+                form.style.backgroundImage = "url(/img/vege/flat-lay-photo-of-fruits-and-vegetables-1660027_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
             } else {
-                recipe.style.backgroundImage = "url(/img/vege/nordwood-themes-Tmz8FThN_BE-unsplash_Easy-Resize.com.jpg)";
+                recipe.style.backgroundImage = "url(/img/vege/flat-lay-photo-of-fruits-and-vegetables-1660027_Easy-Resize.com.jpg)";
                 recipe.style.backgroundSize = "cover";
             }
             break;
