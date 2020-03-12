@@ -181,7 +181,7 @@ div[class$="category"] a {
 }
 
 div[class$="category"] a h3 {
-  font-size: 8vw;
+  font-size: 7.8vw;
   color: rgba(0, 0, 0, 0.897);
   text-shadow: rgba(250, 249, 245, 0.976) 1px 1.3px 2px;
   position: absolute;
@@ -197,25 +197,21 @@ div[class$="category"] a h3 {
 }
 
 .salad-category, .salad-recipes_title {
-  background-image: url(/img/vege/louis-hansel-shotsoflouis-phEaeqe555M-unsplash_Easy-Resize.com.jpg);
+  background-image: url(/img/salad/louis-hansel-shotsoflouis-MlPD-AzZYMg-unsplash_Easy-Resize.com.jpg);
   background-position: 50% 30%;
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
 }
 
 .salad-category h3, .salad-recipes_title h3 {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-  right: 10%;
+  left: 7%;
 }
 
 .meat-category, .meat-recipes_title {
-  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-K47107aP8UU-unsplash_Easy-Resize.com.jpg);
-  background-position: 40% 100%;
+  background-image: url(/img/meat_dish/louis-hansel-shotsoflouis-4FY6xU05qaQ-unsplash_Easy-Resize.com.jpg);
+  background-position: 0% 72%;
 }
 
 .meat-category h3, .meat-recipes_title h3 {
-  left: 47%;
+  left: 50%;
 }
 
 .vege-category, .vege-recipes_title {
@@ -223,7 +219,7 @@ div[class$="category"] a h3 {
 }
 
 .vege-category h3, .vege-recipes_title h3 {
-  left: 10%;
+  left: 7%;
 }
 
 .soup-category, .soup-recipes_title {
@@ -241,7 +237,7 @@ div[class$="category"] a h3 {
 }
 
 .sweet-category h3, .sweet-recipes_title h3 {
-  left: 10%;
+  left: 7%;
 }
 
 .smoothie-category, .smoothie-recipes_title {
@@ -855,7 +851,6 @@ div[class$="category"] a h3 {
   }
   div[class$="category"] a h3 {
     font-size: 2.7vw;
-    bottom: 24%;
   }
   div:hover[class$="category"] {
     opacity: 1;
@@ -887,7 +882,6 @@ div[class$="category"] a h3 {
   }
   .menu .meat-category h3, .menu .meat-recipes_title h3 {
     left: 43.5%;
-    bottom: 23%;
   }
   .menu .vege-category, .menu .vege-recipes_title {
     opacity: 0.6;
@@ -1026,12 +1020,13 @@ div[class$="category"] a h3 {
 }
 
 .salad-recipes_list {
-  background-image: url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg);
+  background-image: url(/img/salad/hermes-rivera-OzBLe_Eg1mg-unsplash_Easy-Resize.com.jpg);
+  background-position: 47%;
 }
 
 .meat-recipes_list {
   background-image: url(/img/meat_dish/cuisine-cutlery-delicious-dining-299348_Easy-Resize.com.jpg);
-  background-position: 35% 0%;
+  background-position: 35%;
 }
 
 .vege-recipes_list {

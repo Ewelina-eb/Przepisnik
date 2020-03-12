@@ -74,7 +74,6 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-
             // wyświetlenie przepisów z localStorage 
             function renderRecipesList() {
                 let allRecipes = JSON.parse(localStorage.getItem("recipes"));
@@ -95,10 +94,6 @@
                 meatInMenu.style.opacity = "1";
             }
             window.addEventListener("load", renderRecipesList, false);
-
-            // zmiana opacity po kliknięciu meat-category
-
-
         });
     </script>
 </body>

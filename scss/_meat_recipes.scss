@@ -6,17 +6,5 @@
   .meat-recipes_list {
     @extend %recipes-list;
     background-image: $meat-background-img;
-    background-position: 35% 0%;
+    background-position: 35%;
   }
-
-  // RWD
-  // @media (min-width: 768px) {
-  //   .menu {
-  //     .snack-category {
-  //       // opacity: 0.6;
-  //     }
-  //     .meat-category {
-  //       // opacity: 1;
-  //     }
-  //   }
-  // }

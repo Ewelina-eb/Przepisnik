@@ -35,7 +35,7 @@
     position: relative;
 
     h3 {
-      font-size: 8vw;
+      font-size: 7.8vw;
       color: rgba(0, 0, 0, 0.897);
       text-shadow: $color-main 1px 1.3px 2px;
       position: absolute;
@@ -59,20 +59,18 @@ div[class$="category"] {
 .salad-category {
   background-image: $salad-header-img;
   background-position: 50% 30%;
-  transform: scale(-1, 1);
 
   h3 {
-    transform: scale(-1, 1);
-    right: 10%;
+    left: 7%;
   }
 }
 
 .meat-category {
   background-image: $meat-header-img;
-  background-position: 40% 100%;
+  background-position: 0% 72%;
 
   h3 {
-    left: 47%;
+    left: 50%;
   }
 }
 
@@ -80,7 +78,7 @@ div[class$="category"] {
   background-image: $vege-header-img;
 
   h3 {
-    left: 10%;
+    left: 7%;
   }
 }
 
@@ -98,7 +96,7 @@ div[class$="category"] {
   background-position: 0% 45%;
 
   h3 {
-    left: 10%;
+    left: 7%;
   }
 }
 

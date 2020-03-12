@@ -52,11 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.add("salad-category");
             header.querySelector("h3").innerHTML = "Sałatki";
             if (form) {
-                form.style.backgroundImage = "url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg)";
+                form.style.backgroundImage = "url(/img/salad/hermes-rivera-OzBLe_Eg1mg-unsplash_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
+                form.style.backgroundPosition = "47%";
             } else {
-                recipe.style.backgroundImage = "url(/img/salad/ala-gvMwYzp-R2U-unsplash_Easy-Resize.com.jpg)";
+                recipe.style.backgroundImage = "url(/img/salad/hermes-rivera-OzBLe_Eg1mg-unsplash_Easy-Resize.com.jpg)";
                 recipe.style.backgroundSize = "cover";
+                recipe.style.backgroundPosition = "47%";
             }
             break;
 
