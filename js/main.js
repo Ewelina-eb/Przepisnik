@@ -42,9 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (form) {
                 form.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
+                form.style.backgroundPosition = "0% 70%";
             } else {
                 recipe.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
                 recipe.style.backgroundSize = "cover";
+                recipe.style.backgroundPosition = "0% 70%";
             }
             break;
 
