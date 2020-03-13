@@ -22,11 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector(".category-name");
     const form = document.querySelector(".new-recipe");
     const recipe = document.querySelector(".recipe");
+    const snackInMenu = document.querySelector(".snack-category");
+    const saladInMenu = document.querySelector(".salad-category");
+    const meatInMenu = document.querySelector(".meat-category");
+    const vegeInMenu = document.querySelector(".vege-category");
+    const soupInMenu = document.querySelector(".soup-category");
+    const sweetInMenu = document.querySelector(".sweet-category");
+    const smoothieInMenu = document.querySelector(".smoothie-category");
 
     switch (category) {
         case "snack":
             header.classList.add("snack-recipes_title");
             header.querySelector("h3").innerHTML = "Przekąski";
+            snackInMenu.style.opacity = "1";
             if (form) {
                 form.style.backgroundImage = "url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
@@ -36,23 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             break;
 
-        case "sweet":
-            header.classList.add("sweet-category");
-            header.querySelector("h3").innerHTML = "Na słodko";
-            if (form) {
-                form.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
-                form.style.backgroundSize = "cover";
-                form.style.backgroundPosition = "0% 70%";
-            } else {
-                recipe.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
-                recipe.style.backgroundSize = "cover";
-                recipe.style.backgroundPosition = "0% 70%";
-            }
-            break;
-
         case "salad":
             header.classList.add("salad-category");
             header.querySelector("h3").innerHTML = "Sałatki";
+            saladInMenu.style.opacity = "1";
             if (form) {
                 form.style.backgroundImage = "url(/img/salad/hermes-rivera-OzBLe_Eg1mg-unsplash_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
@@ -67,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         case "meat":
             header.classList.add("meat-category");
             header.querySelector("h3").innerHTML = "Dania mięsne";
+            meatInMenu.style.opacity = "1";
             if (form) {
                 form.style.backgroundImage = "url(/img/meat_dish/cuisine-cutlery-delicious-dining-299348_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
@@ -79,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         case "vege":
             header.classList.add("vege-category");
             header.querySelector("h3").innerHTML = "Dania vege";
+            vegeInMenu.style.opacity = "1";
             if (form) {
                 form.style.backgroundImage = "url(/img/vege/flat-lay-photo-of-fruits-and-vegetables-1660027_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
@@ -91,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         case "soup":
             header.classList.add("soup-category");
             header.querySelector("h3").innerHTML = "Zupy";
+            soupInMenu.style.opacity = "1";
             if (form) {
                 form.style.backgroundImage = "url(/img/soup/soup-and-croutons-picjumbo-com_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
@@ -100,9 +98,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             break;
 
+        case "sweet":
+            header.classList.add("sweet-category");
+            header.querySelector("h3").innerHTML = "Na słodko";
+            sweetInMenu.style.opacity = "1";
+            if (form) {
+                form.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
+                form.style.backgroundSize = "cover";
+                form.style.backgroundPosition = "0% 70%";
+            } else {
+                recipe.style.backgroundImage = "url(/img/on_sweetly/irina-K1LdlEj0QrY-unsplash_Easy-Resize.com.jpg)";
+                recipe.style.backgroundSize = "cover";
+                recipe.style.backgroundPosition = "0% 70%";
+            }
+            break;
+
         case "smoothie":
             header.classList.add("smoothie-category");
             header.querySelector("h3").innerHTML = "Koktajle";
+            smoothieInMenu.style.opacity = "1";
             if (form) {
                 form.style.backgroundImage = "url(/img/smoothie/orange-fruit-and-raspberries-775033_Easy-Resize.com_2.jpg)";
                 form.style.backgroundSize = "cover";
