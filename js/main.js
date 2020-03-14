@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
             header.querySelector("h3").innerHTML = "Przekąski";
             snackInMenu.style.opacity = "1";
             if (form) {
-                form.style.backgroundImage = "url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg)";
+                form.style.backgroundImage = "url(/img/snack/top-view-photo-of-skewers-3026805_Easy-Resize.com.jpg)";
                 form.style.backgroundSize = "cover";
             } else {
-                recipe.style.backgroundImage = "url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg)";
+                recipe.style.backgroundImage = "url(/img/snack/top-view-photo-of-skewers-3026805_Easy-Resize.com.jpg)";
                 recipe.style.backgroundSize = "cover";
             }
             break;

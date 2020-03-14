@@ -150,3 +150,127 @@ div[class$="category"] {
     }
   }
 }
+
+@media (min-width: 768px) {
+  .main-page {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 12.5vh 1fr;
+    grid-gap: 0px;
+    grid-template-areas:
+      "header header"
+      "menu main";
+  }
+  .main-header {
+    border: 1px solid rgba(71, 70, 70, 0.805);
+    grid-area: header;
+    h2 {
+      font-size: 8vw;
+    }
+  }
+  .main-page_menu {
+    display: flex;
+    flex-direction: column;
+    grid-area: menu;
+    .snack-category {
+      opacity: 0.6;
+      h3 {
+        left: 54%;
+      }
+    }
+    .salad-category {
+      opacity: 0.6;
+      h3 {
+        right: 7%;
+      }
+    }
+    .meat-category {
+      opacity: 0.6;
+      h3 {
+        left: 43.5%;
+      }
+    }
+    .vege-category {
+      opacity: 0.6;
+      h3 {
+        left: 5%;
+      }
+    }
+    .soup-category {
+      opacity: 0.6;
+      h3 {
+        left: 69%;
+      }
+    }
+    .sweet-category {
+      opacity: 0.6;
+      h3 {
+        left: 5%;
+      }
+    }
+    .smoothie-category {
+      opacity: 0.6;
+      h3 {
+        right: 63%;
+      }
+    }
+  }
+  .main-page_welcome {
+    max-width: 70vw;
+    height: 87.5vh;
+    grid-area: main;
+    background-image: url(/img/first_page/brooke-lark-wMzx2nBdeng-unsplash_Easy-Resize.com.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 50%;
+    p {
+      max-width: 39vw;
+      font-size: 3.5vw;
+      color: goldenrod;
+      font-family: $font-main;
+      text-align: center;
+      background-color: rgba(250, 249, 245, 0.300);
+      border-radius: 10px;
+      padding: 5px;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .main-page {
+    grid-template-columns: 25vw 1fr;
+  }
+  .main-header {
+    h2 {
+      font-size: 6.5vw;
+    }
+  }
+  .main-page_menu {
+    .meat-category {
+      h3 {
+        left: 46%;
+      }
+    }
+  }
+  .main-page_welcome {
+    max-width: 75vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-header {
+    h2 {
+      font-size: 5.7vw;
+    }
+  }
+  .main-page_welcome {
+    p {
+      font-size: 3vw;
+    }
+  }
+}

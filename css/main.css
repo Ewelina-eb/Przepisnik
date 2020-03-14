@@ -277,6 +277,129 @@ div[class$="category"] a h3 {
   }
 }
 
+@media (min-width: 768px) {
+  .main-page {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 12.5vh 1fr;
+    grid-gap: 0px;
+    grid-template-areas: "header header" "menu main";
+  }
+  .main-header {
+    border: 1px solid rgba(71, 70, 70, 0.805);
+    grid-area: header;
+  }
+  .main-header h2 {
+    font-size: 8vw;
+  }
+  .main-page_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-area: menu;
+  }
+  .main-page_menu .snack-category, .main-page_menu .snack-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .snack-category h3, .main-page_menu .snack-recipes_title h3 {
+    left: 54%;
+  }
+  .main-page_menu .salad-category, .main-page_menu .salad-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .salad-category h3, .main-page_menu .salad-recipes_title h3 {
+    right: 7%;
+  }
+  .main-page_menu .meat-category, .main-page_menu .meat-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .meat-category h3, .main-page_menu .meat-recipes_title h3 {
+    left: 43.5%;
+  }
+  .main-page_menu .vege-category, .main-page_menu .vege-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .vege-category h3, .main-page_menu .vege-recipes_title h3 {
+    left: 5%;
+  }
+  .main-page_menu .soup-category, .main-page_menu .soup-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .soup-category h3, .main-page_menu .soup-recipes_title h3 {
+    left: 69%;
+  }
+  .main-page_menu .sweet-category, .main-page_menu .sweet-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .sweet-category h3, .main-page_menu .sweet-recipes_title h3 {
+    left: 5%;
+  }
+  .main-page_menu .smoothie-category, .main-page_menu .smoothie-recipes_title {
+    opacity: 0.6;
+  }
+  .main-page_menu .smoothie-category h3, .main-page_menu .smoothie-recipes_title h3 {
+    right: 63%;
+  }
+  .main-page_welcome {
+    max-width: 70vw;
+    height: 87.5vh;
+    grid-area: main;
+    background-image: url(/img/first_page/brooke-lark-wMzx2nBdeng-unsplash_Easy-Resize.com.jpg);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position: 50%;
+  }
+  .main-page_welcome p {
+    max-width: 39vw;
+    font-size: 3.5vw;
+    color: goldenrod;
+    font-family: "playball", sans-serif;
+    text-align: center;
+    background-color: rgba(250, 249, 245, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main-page {
+    grid-template-columns: 25vw 1fr;
+  }
+  .main-header h2 {
+    font-size: 6.5vw;
+  }
+  .main-page_menu .meat-category h3, .main-page_menu .meat-recipes_title h3 {
+    left: 46%;
+  }
+  .main-page_welcome {
+    max-width: 75vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-header h2 {
+    font-size: 5.7vw;
+  }
+  .main-page_welcome p {
+    font-size: 3vw;
+  }
+}
+
 .new-recipe {
   width: 100%;
   min-height: 87.5vh;
@@ -713,11 +836,12 @@ div[class$="category"] a h3 {
 }
 
 .snack-recipes_list {
-  background-image: url(/img/snack/grapes-with-cheese-1741284_Easy-Resize.com.jpg);
+  background-image: url(/img/snack/top-view-photo-of-skewers-3026805_Easy-Resize.com.jpg);
+  background-position: 60%;
 }
 
 .snack-recipes_list li {
-  background-color: rgba(250, 249, 245, 0.4);
+  background-color: rgba(250, 249, 245, 0.7);
 }
 
 .add-recipe-btn {
@@ -1000,12 +1124,6 @@ div[class$="category"] a h3 {
   }
   div[class$="category"] a h3 {
     font-size: 2.1vw;
-  }
-  .snack-recipes_list li a {
-    font-size: 1.8vw;
-  }
-  .snack-recipes_list li a:hover {
-    font-size: 2vw;
   }
   .add-recipe-btn a {
     font-size: 2.2vw;
