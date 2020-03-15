@@ -811,10 +811,12 @@ div[class$="category"] a h3 {
 
 .snack-recipes_list li, .sweet-recipes_list li, .salad-recipes_list li, .meat-recipes_list li, .vege-recipes_list li, .soup-recipes_list li, .smoothie-recipes_list li {
   width: 100%;
-  height: 8.5vh;
+  min-height: 8.5vh;
+  padding: 3px;
   border: 1px solid rgba(0, 0, 0, 0.256);
   background-color: rgba(250, 249, 245, 0.7);
   list-style: none;
+  text-align: center;
 }
 
 .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
