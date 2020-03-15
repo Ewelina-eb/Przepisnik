@@ -253,6 +253,10 @@ div[class$="category"] a h3 {
   right: 62%;
 }
 
+.main-page_welcome {
+  display: none;
+}
+
 @media (min-width: 400px) {
   div[class$="category"] a h3 {
     font-size: 7vw;

@@ -111,6 +111,12 @@ div[class$="category"] {
   }
 }
 
+// RWD
+
+.main-page_welcome {
+  display: none;
+}
+
 @media (min-width: 400px) {
   %btn-category {
     a {
