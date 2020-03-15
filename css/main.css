@@ -813,7 +813,7 @@ div[class$="category"] a h3 {
   width: 100%;
   height: 8.5vh;
   border: 1px solid rgba(0, 0, 0, 0.256);
-  background-color: rgba(250, 249, 245, 0.6);
+  background-color: rgba(250, 249, 245, 0.7);
   list-style: none;
 }
 
@@ -910,7 +910,7 @@ div[class$="category"] a h3 {
 
 @media (min-width: 480px) {
   .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
-    font-size: 4.7vw;
+    font-size: 4.8vw;
   }
   .add-recipe-btn a {
     font-size: 5vw;
@@ -922,7 +922,7 @@ div[class$="category"] a h3 {
     font-size: 7.7vw;
   }
   .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
-    font-size: 4vw;
+    font-size: 4.2vw;
   }
   .add-recipe-btn a {
     font-size: 4.5vw;
@@ -1042,7 +1042,7 @@ div[class$="category"] a h3 {
     background-color: #faf9f5;
   }
   .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
-    font-size: 2.8vw;
+    font-size: 3vw;
   }
   .snack-recipes_list li a:hover, .sweet-recipes_list li a:hover, .salad-recipes_list li a:hover, .meat-recipes_list li a:hover, .vege-recipes_list li a:hover, .soup-recipes_list li a:hover, .smoothie-recipes_list li a:hover {
     font-size: 3.1vw;
@@ -1094,13 +1094,13 @@ div[class$="category"] a h3 {
     border-radius: 10px;
   }
   .snack-recipes_list li a, .sweet-recipes_list li a, .salad-recipes_list li a, .meat-recipes_list li a, .vege-recipes_list li a, .soup-recipes_list li a, .smoothie-recipes_list li a {
-    font-size: 2.1vw;
+    font-size: 2.3vw;
     -webkit-box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
             box-shadow: rgba(71, 70, 70, 0.605) 0px -1px 4px;
     border-radius: 10px;
   }
   .snack-recipes_list li a:hover, .sweet-recipes_list li a:hover, .salad-recipes_list li a:hover, .meat-recipes_list li a:hover, .vege-recipes_list li a:hover, .soup-recipes_list li a:hover, .smoothie-recipes_list li a:hover {
-    font-size: 2.3vw;
+    font-size: 2.5vw;
   }
   .add-recipe-btn {
     width: 66vw;
@@ -1214,18 +1214,19 @@ div[class$="category"] a h3 {
   font-size: 6.2vw;
   font-family: "playball", sans-serif;
   padding-bottom: 1vh;
-  background-color: rgba(250, 249, 245, 0.5);
+  background-color: rgba(250, 249, 245, 0.7);
 }
 
 .recipe-ingredients p,
 .recipe-preparation p {
   padding: 1px 3px;
+  margin-bottom: 5px;
   font-size: 5.2vw;
   font-family: "hind", sans-serif;
   color: black;
   font-weight: 500;
   line-height: 1.3;
-  background-color: rgba(250, 249, 245, 0.7);
+  background-color: rgba(250, 249, 245, 0.8);
   white-space: pre-wrap;
 }
 
@@ -1267,7 +1268,7 @@ div[class$="category"] a h3 {
   }
   .recipe-ingredients p,
   .recipe-preparation p {
-    font-size: 4.3vw;
+    font-size: 4.4vw;
   }
   .recipe-btn {
     height: 7.7vh;
@@ -1287,10 +1288,10 @@ div[class$="category"] a h3 {
   }
   .recipe-ingredients p,
   .recipe-preparation p {
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
   .recipe-btn a {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
 }
 
@@ -1300,11 +1301,11 @@ div[class$="category"] a h3 {
   }
   .recipe-ingredients h5,
   .recipe-preparation h5 {
-    font-size: 3.6vw;
+    font-size: 3.8vw;
   }
   .recipe-ingredients p,
   .recipe-preparation p {
-    font-size: 2.5vw;
+    font-size: 2.7vw;
   }
   .recipe-btn a {
     font-size: 3.7vw;
@@ -1316,15 +1317,15 @@ div[class$="category"] a h3 {
     grid-area: main;
   }
   .recipe-title h4 {
-    font-size: 3.5vw;
+    font-size: 3.8vw;
   }
   .recipe-ingredients h5,
   .recipe-preparation h5 {
-    font-size: 2.5vw;
+    font-size: 2.9vw;
   }
   .recipe-ingredients p,
   .recipe-preparation p {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
   .recipe-btn {
     display: none;
@@ -1341,7 +1342,7 @@ div[class$="category"] a h3 {
     width: 66vw;
   }
   .recipe-title h4 {
-    font-size: 2.7vw;
+    font-size: 3.5vw;
   }
   .recipe-ingredients,
   .recipe-preparation {
@@ -1351,23 +1352,23 @@ div[class$="category"] a h3 {
   .recipe-preparation h5 {
     padding: 1px 3px;
     margin-bottom: 1vh;
-    font-size: 2vw;
+    font-size: 2.3vw;
     border-radius: 10px;
   }
   .recipe-ingredients p,
   .recipe-preparation p {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     border-radius: 10px;
   }
 }
 
 @media (min-width: 1200px) {
   .recipe-title h4 {
-    font-size: 2.6vw;
+    font-size: 3vw;
   }
   .recipe-ingredients h5,
   .recipe-preparation h5 {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
   .recipe-ingredients p,
   .recipe-preparation p {
